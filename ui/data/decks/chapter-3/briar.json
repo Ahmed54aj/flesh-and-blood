@@ -1,0 +1,944 @@
+{
+  "release_date": "2026-06-05",
+  "cards": [
+    {
+      "languages": {
+        "en": "SBA001"
+      },
+      "card_id": "briar",
+      "print_id": "SBA001",
+      "printed_name": "Briar",
+      "printed_typebox": "Elemental Runeblade Hero - Young",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "4",
+      "printed_life": "20",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA001.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA001.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA001.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA002"
+      },
+      "card_id": "scorpio-comet-tail",
+      "print_id": "SBA002",
+      "printed_name": "Scorpio, Comet Tail",
+      "printed_typebox": "Lightning Runeblade Weapon - Sword (2H)",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "1",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA002.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA002.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA002.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA003"
+      },
+      "card_id": "star-fall",
+      "print_id": "SBA003",
+      "printed_name": "Star Fall",
+      "printed_typebox": "Runeblade Weapon - Sword (2H)",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "1",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA003.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA003.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA003.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA004"
+      },
+      "card_id": "blade-beckoner-helm",
+      "print_id": "SBA004",
+      "printed_name": "Blade Beckoner Helm",
+      "printed_typebox": "Generic Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA004.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA004.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA004.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA005"
+      },
+      "card_id": "crown-of-dichotomy",
+      "print_id": "SBA005",
+      "printed_name": "Crown of Dichotomy",
+      "printed_typebox": "Runeblade Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA005.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA005.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA005.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA006"
+      },
+      "card_id": "blossom-of-spring",
+      "print_id": "SBA006",
+      "printed_name": "Blossom of Spring",
+      "printed_typebox": "Generic Equipment - Chest",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA006.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA006.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA006.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA007"
+      },
+      "card_id": "blade-beckoner-gauntlets",
+      "print_id": "SBA007",
+      "printed_name": "Blade Beckoner Gauntlets",
+      "printed_typebox": "Generic Equipment - Arms",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA007.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA007.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA007.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA008"
+      },
+      "card_id": "swiftstrike-bracers",
+      "print_id": "SBA008",
+      "printed_name": "Swiftstrike Bracers",
+      "printed_typebox": "Generic Equipment - Arms",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA008.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA008.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA008.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA009"
+      },
+      "card_id": "blade-beckoner-boots",
+      "print_id": "SBA009",
+      "printed_name": "Blade Beckoner Boots",
+      "printed_typebox": "Generic Equipment - Legs",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA009.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA009.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA009.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA010"
+      },
+      "card_id": "quick-clicks",
+      "print_id": "SBA010",
+      "printed_name": "Quick Clicks",
+      "printed_typebox": "Generic Equipment - Legs",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA010.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA010.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA010.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA011"
+      },
+      "card_id": "arcanic-shockwave-1",
+      "print_id": "SBA011",
+      "printed_name": "Arcanic Shockwave",
+      "printed_typebox": "Elemental Runeblade Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA011.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA011.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA011.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA012"
+      },
+      "card_id": "entwine-lightning-1",
+      "print_id": "SBA012",
+      "printed_name": "Entwine Lightning",
+      "printed_typebox": "Elemental Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA012.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA012.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA012.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA013"
+      },
+      "card_id": "fry-1",
+      "print_id": "SBA013",
+      "printed_name": "Fry",
+      "printed_typebox": "Lightning Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA013.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA013.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA013.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA014"
+      },
+      "card_id": "jack-be-quick-1",
+      "print_id": "SBA014",
+      "printed_name": "Jack Be Quick",
+      "printed_typebox": "Generic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA014.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA014.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA014.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA015"
+      },
+      "card_id": "lightning-surge-1",
+      "print_id": "SBA015",
+      "printed_name": "Lightning Surge",
+      "printed_typebox": "Lightning Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA015.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA015.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA015.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA016"
+      },
+      "card_id": "path-of-same-ends-1",
+      "print_id": "SBA016",
+      "printed_name": "Path of Same Ends",
+      "printed_typebox": "Lightning Runeblade Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA016.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA016.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA016.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA017"
+      },
+      "card_id": "ravenous-rabble-1",
+      "print_id": "SBA017",
+      "printed_name": "Ravenous Rabble",
+      "printed_typebox": "Generic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "5",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA017.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA017.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA017.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA018"
+      },
+      "card_id": "rush-of-power-1",
+      "print_id": "SBA018",
+      "printed_name": "Rush of Power",
+      "printed_typebox": "Lightning Runeblade Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA018.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA018.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA018.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA019"
+      },
+      "card_id": "scar-for-a-scar-1",
+      "print_id": "SBA019",
+      "printed_name": "Scar for a Scar",
+      "printed_typebox": "Generic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA019.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA019.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA019.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA020"
+      },
+      "card_id": "second-strike-1",
+      "print_id": "SBA020",
+      "printed_name": "Second Strike",
+      "printed_typebox": "Lightning Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA020.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA020.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA020.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA021"
+      },
+      "card_id": "snatch-1",
+      "print_id": "SBA021",
+      "printed_name": "Snatch",
+      "printed_typebox": "Generic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA021.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA021.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA021.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA022"
+      },
+      "card_id": "static-shock-1",
+      "print_id": "SBA022",
+      "printed_name": "Static Shock",
+      "printed_typebox": "Elemental Runeblade Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA022.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA022.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA022.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA023"
+      },
+      "card_id": "sigil-of-suffering-1",
+      "print_id": "SBA023",
+      "printed_name": "Sigil of Suffering",
+      "printed_typebox": "Runeblade Defense Reaction",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA023.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA023.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA023.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA024"
+      },
+      "card_id": "arcane-seeds--life-1",
+      "print_id": "SBA024",
+      "printed_name": "Arcane Seeds||Life",
+      "printed_typebox": "Runeblade Action||Earth Instant",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "horizontal",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA024.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA024.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA024.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA025"
+      },
+      "card_id": "burn-up--shock-1",
+      "print_id": "SBA025",
+      "printed_name": "Burn Up||Shock",
+      "printed_typebox": "Runeblade Action||Lightning Instant",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "horizontal",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA025.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA025.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA025.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA026"
+      },
+      "card_id": "nimblism-1",
+      "print_id": "SBA026",
+      "printed_name": "Nimblism",
+      "printed_typebox": "Generic Action",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA026.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA026.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA026.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA027"
+      },
+      "card_id": "sizzle-1",
+      "print_id": "SBA027",
+      "printed_name": "Sizzle",
+      "printed_typebox": "Lightning Action",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA027.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA027.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA027.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA028"
+      },
+      "card_id": "sprout-strength-1",
+      "print_id": "SBA028",
+      "printed_name": "Sprout Strength",
+      "printed_typebox": "Earth Action",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA028.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA028.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA028.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA029"
+      },
+      "card_id": "weave-lightning-1",
+      "print_id": "SBA029",
+      "printed_name": "Weave Lightning",
+      "printed_typebox": "Lightning Action",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA029.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA029.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA029.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA030"
+      },
+      "card_id": "arcane-polarity-1",
+      "print_id": "SBA030",
+      "printed_name": "Arcane Polarity",
+      "printed_typebox": "Generic Instant",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA030.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA030.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA030.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA031"
+      },
+      "card_id": "cloud-cover-1",
+      "print_id": "SBA031",
+      "printed_name": "Cloud Cover",
+      "printed_typebox": "Lightning Instant",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA031.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA031.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA031.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA032"
+      },
+      "card_id": "lightning-press-1",
+      "print_id": "SBA032",
+      "printed_name": "Lightning Press",
+      "printed_typebox": "Lightning Instant",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA032.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA032.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA032.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA033"
+      },
+      "card_id": "nimblism-2",
+      "print_id": "SBA033",
+      "printed_name": "Nimblism",
+      "printed_typebox": "Generic Action",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA033.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA033.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA033.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA034"
+      },
+      "card_id": "embodiment-of-earth",
+      "print_id": "SBA034",
+      "printed_name": "Embodiment of Earth",
+      "printed_typebox": "Elemental Token - Aura",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA034.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA034.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA034.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA035"
+      },
+      "card_id": "embodiment-of-lightning",
+      "print_id": "SBA035",
+      "printed_name": "Embodiment of Lightning",
+      "printed_typebox": "Elemental Token - Aura",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA035.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA035.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA035.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBA036"
+      },
+      "card_id": "runechant",
+      "print_id": "SBA036",
+      "printed_name": "Runechant",
+      "printed_typebox": "Runeblade Token - Aura",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBA036.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBA036.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBA036.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    }
+  ],
+  "product_name": "Silver Age Chapter 3 - Briar",
+  "description": "",
+  "banner_background_colour": null
+}

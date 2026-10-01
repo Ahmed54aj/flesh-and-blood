@@ -1,0 +1,944 @@
+{
+  "release_date": "2026-06-05",
+  "cards": [
+    {
+      "languages": {
+        "en": "SBL001"
+      },
+      "card_id": "boltyn",
+      "print_id": "SBL001",
+      "printed_name": "Boltyn",
+      "printed_typebox": "Light Warrior Hero - Young",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "4",
+      "printed_life": "20",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL001.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL001.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL001.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL002"
+      },
+      "card_id": "raydn-duskbane",
+      "print_id": "SBL002",
+      "printed_name": "Raydn, Duskbane",
+      "printed_typebox": "Light Warrior Weapon - Sword (2H)",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "0",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL002.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL002.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL002.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL003"
+      },
+      "card_id": "halo-of-illumination",
+      "print_id": "SBL003",
+      "printed_name": "Halo of Illumination",
+      "printed_typebox": "Light Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL003.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL003.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL003.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL004"
+      },
+      "card_id": "helm-of-unity",
+      "print_id": "SBL004",
+      "printed_name": "Helm of Unity",
+      "printed_typebox": "Warrior Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL004.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL004.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL004.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL005"
+      },
+      "card_id": "garland-of-spring",
+      "print_id": "SBL005",
+      "printed_name": "Garland of Spring",
+      "printed_typebox": "Generic Equipment - Chest",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL005.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL005.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL005.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL006"
+      },
+      "card_id": "nullrune-robe",
+      "print_id": "SBL006",
+      "printed_name": "Nullrune Robe",
+      "printed_typebox": "Generic Equipment - Chest",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL006.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL006.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL006.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL007"
+      },
+      "card_id": "gauntlets-of-unity",
+      "print_id": "SBL007",
+      "printed_name": "Gauntlets of Unity",
+      "printed_typebox": "Warrior Equipment - Arms",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL007.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL007.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL007.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL008"
+      },
+      "card_id": "radiant-touch",
+      "print_id": "SBL008",
+      "printed_name": "Radiant Touch",
+      "printed_typebox": "Light Equipment - Arms",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL008.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL008.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL008.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL009"
+      },
+      "card_id": "flat-trackers",
+      "print_id": "SBL009",
+      "printed_name": "Flat Trackers",
+      "printed_typebox": "Brute / Warrior Equipment - Legs",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL009.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL009.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL009.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL010"
+      },
+      "card_id": "nullrune-boots",
+      "print_id": "SBL010",
+      "printed_name": "Nullrune Boots",
+      "printed_typebox": "Generic Equipment - Legs",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL010.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL010.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL010.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL011"
+      },
+      "card_id": "beaming-bravado-1",
+      "print_id": "SBL011",
+      "printed_name": "Beaming Bravado",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL011.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL011.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL011.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL012"
+      },
+      "card_id": "bolt-of-courage-1",
+      "print_id": "SBL012",
+      "printed_name": "Bolt of Courage",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL012.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL012.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL012.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL013"
+      },
+      "card_id": "duty-bound-blitz-1",
+      "print_id": "SBL013",
+      "printed_name": "Duty Bound Blitz",
+      "printed_typebox": "Light Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "5",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL013.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL013.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL013.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL014"
+      },
+      "card_id": "engulfing-light-1",
+      "print_id": "SBL014",
+      "printed_name": "Engulfing Light",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL014.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL014.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL014.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL015"
+      },
+      "card_id": "illuminate-1",
+      "print_id": "SBL015",
+      "printed_name": "Illuminate",
+      "printed_typebox": "Light Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL015.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL015.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL015.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL016"
+      },
+      "card_id": "light-the-way-1",
+      "print_id": "SBL016",
+      "printed_name": "Light the Way",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL016.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL016.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL016.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL017"
+      },
+      "card_id": "snatch-1",
+      "print_id": "SBL017",
+      "printed_name": "Snatch",
+      "printed_typebox": "Generic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL017.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL017.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL017.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL018"
+      },
+      "card_id": "take-flight-1",
+      "print_id": "SBL018",
+      "printed_name": "Take Flight",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "4",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL018.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL018.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL018.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL019"
+      },
+      "card_id": "courageous-steelhand-1",
+      "print_id": "SBL019",
+      "printed_name": "Courageous Steelhand",
+      "printed_typebox": "Light Warrior Attack Reaction",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL019.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL019.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL019.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL020"
+      },
+      "card_id": "edict-of-steel-1",
+      "print_id": "SBL020",
+      "printed_name": "Edict of Steel",
+      "printed_typebox": "Warrior Action",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL020.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL020.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL020.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL021"
+      },
+      "card_id": "glisten-1",
+      "print_id": "SBL021",
+      "printed_name": "Glisten",
+      "printed_typebox": "Light Instant",
+      "printed_pitch": 1,
+      "printed_cost": "2",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL021.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL021.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL021.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL022"
+      },
+      "card_id": "toe-the-line-1",
+      "print_id": "SBL022",
+      "printed_name": "Toe the Line",
+      "printed_typebox": "Warrior Instant",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL022.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL022.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL022.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL023"
+      },
+      "card_id": "banneret-of-salvation-2",
+      "print_id": "SBL023",
+      "printed_name": "Banneret of Salvation",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL023.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL023.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL023.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL024"
+      },
+      "card_id": "beaming-bravado-2",
+      "print_id": "SBL024",
+      "printed_name": "Beaming Bravado",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL024.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL024.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL024.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL025"
+      },
+      "card_id": "bolt-of-courage-2",
+      "print_id": "SBL025",
+      "printed_name": "Bolt of Courage",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL025.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL025.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL025.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL026"
+      },
+      "card_id": "duty-bound-blitz-2",
+      "print_id": "SBL026",
+      "printed_name": "Duty Bound Blitz",
+      "printed_typebox": "Light Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL026.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL026.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL026.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL027"
+      },
+      "card_id": "engulfing-light-2",
+      "print_id": "SBL027",
+      "printed_name": "Engulfing Light",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL027.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL027.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL027.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL028"
+      },
+      "card_id": "light-the-way-2",
+      "print_id": "SBL028",
+      "printed_name": "Light the Way",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL028.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL028.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL028.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL029"
+      },
+      "card_id": "take-flight-2",
+      "print_id": "SBL029",
+      "printed_name": "Take Flight",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "1",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL029.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL029.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL029.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL030"
+      },
+      "card_id": "v-of-the-vanguard-2",
+      "print_id": "SBL030",
+      "printed_name": "V of the Vanguard",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "1",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL030.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL030.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL030.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL031"
+      },
+      "card_id": "valiant-thrust-2",
+      "print_id": "SBL031",
+      "printed_name": "Valiant Thrust",
+      "printed_typebox": "Light Warrior Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "1",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL031.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL031.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL031.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL032"
+      },
+      "card_id": "roaring-beam-2",
+      "print_id": "SBL032",
+      "printed_name": "Roaring Beam",
+      "printed_typebox": "Light Warrior Attack Reaction",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL032.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL032.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL032.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL033"
+      },
+      "card_id": "springboard-somersault-2",
+      "print_id": "SBL033",
+      "printed_name": "Springboard Somersault",
+      "printed_typebox": "Generic Defense Reaction",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL033.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL033.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL033.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL034"
+      },
+      "card_id": "agility",
+      "print_id": "SBL034",
+      "printed_name": "Agility",
+      "printed_typebox": "Generic Token - Aura",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL034.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL034.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL034.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL035"
+      },
+      "card_id": "courage",
+      "print_id": "SBL035",
+      "printed_name": "Courage",
+      "printed_typebox": "Generic Token - Aura",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL035.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL035.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL035.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SBL036"
+      },
+      "card_id": "flurry",
+      "print_id": "SBL036",
+      "printed_name": "Flurry",
+      "printed_typebox": "Warrior Token - Aura",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SBL036.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SBL036.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SBL036.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    }
+  ],
+  "product_name": "Silver Age Chapter 3 - Boltyn",
+  "description": "",
+  "banner_background_colour": null
+}

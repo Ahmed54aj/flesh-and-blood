@@ -1,0 +1,918 @@
+{
+  "release_date": "2026-06-05",
+  "cards": [
+    {
+      "languages": {
+        "en": "SGB001"
+      },
+      "card_id": "gravy-bones",
+      "print_id": "SGB001",
+      "printed_name": "Gravy Bones",
+      "printed_typebox": "Pirate Necromancer Hero - Young",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "4",
+      "printed_life": "20",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB001.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB001.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB001.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB002"
+      },
+      "card_id": "compass-of-sunken-depths",
+      "print_id": "SGB002",
+      "printed_name": "Compass of Sunken Depths",
+      "printed_typebox": "Pirate Necromancer Equipment - Off-Hand",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB002.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB002.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB002.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB003"
+      },
+      "card_id": "carrion-crown",
+      "print_id": "SGB003",
+      "printed_name": "Carrion Crown",
+      "printed_typebox": "Necromancer Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB003.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB003.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB003.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB004"
+      },
+      "card_id": "mournful-casket",
+      "print_id": "SGB004",
+      "printed_name": "Mournful Casket",
+      "printed_typebox": "Necromancer Equipment - Chest",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB004.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB004.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB004.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB005"
+      },
+      "card_id": "nullrune-robe",
+      "print_id": "SGB005",
+      "printed_name": "Nullrune Robe",
+      "printed_typebox": "Generic Equipment - Chest",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB005.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB005.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB005.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB006"
+      },
+      "card_id": "nullrune-gloves",
+      "print_id": "SGB006",
+      "printed_name": "Nullrune Gloves",
+      "printed_typebox": "Generic Equipment - Arms",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB006.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB006.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB006.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB007"
+      },
+      "card_id": "washed-up-wave",
+      "print_id": "SGB007",
+      "printed_name": "Washed Up Wave",
+      "printed_typebox": "Pirate Necromancer Equipment - Arms",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB007.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB007.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB007.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB008"
+      },
+      "card_id": "mage-master-boots",
+      "print_id": "SGB008",
+      "printed_name": "Mage Master Boots",
+      "printed_typebox": "Generic Equipment - Legs",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB008.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB008.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB008.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB009"
+      },
+      "card_id": "scuttle-toes",
+      "print_id": "SGB009",
+      "printed_name": "Scuttle Toes",
+      "printed_typebox": "Necromancer Equipment - Legs",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB009.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB009.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB009.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB010"
+      },
+      "card_id": "battalion-barque-1",
+      "print_id": "SGB010",
+      "printed_name": "Battalion Barque",
+      "printed_typebox": "Pirate Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "4",
+      "printed_power": "7",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB010.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB010.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB010.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB011"
+      },
+      "card_id": "golden-tipple-1",
+      "print_id": "SGB011",
+      "printed_name": "Golden Tipple",
+      "printed_typebox": "Pirate Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB011.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB011.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB011.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB012"
+      },
+      "card_id": "saltwater-swell-1",
+      "print_id": "SGB012",
+      "printed_name": "Saltwater Swell",
+      "printed_typebox": "Pirate Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB012.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB012.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB012.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB013"
+      },
+      "card_id": "swiftwater-sloop-1",
+      "print_id": "SGB013",
+      "printed_name": "Swiftwater Sloop",
+      "printed_typebox": "Pirate Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "2",
+      "printed_power": "6",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB013.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB013.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB013.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB014"
+      },
+      "card_id": "golden-tipple-2",
+      "print_id": "SGB014",
+      "printed_name": "Golden Tipple",
+      "printed_typebox": "Pirate Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "1",
+      "printed_power": "2",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB014.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB014.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB014.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB015"
+      },
+      "card_id": "barnacle-2",
+      "print_id": "SGB015",
+      "printed_name": "Barnacle",
+      "printed_typebox": "Pirate Necromancer Action - Ally",
+      "printed_pitch": 2,
+      "printed_cost": "2",
+      "printed_power": "4",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "3",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB015.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB015.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB015.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB016"
+      },
+      "card_id": "cutty-shark-quick-clip-2",
+      "print_id": "SGB016",
+      "printed_name": "Cutty Shark, Quick Clip",
+      "printed_typebox": "Pirate Necromancer Action - Ally",
+      "printed_pitch": 2,
+      "printed_cost": "1",
+      "printed_power": "3",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "4",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB016.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB016.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB016.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB017"
+      },
+      "card_id": "limpit-hop-a-long-2",
+      "print_id": "SGB017",
+      "printed_name": "Limpit, Hop-a-long",
+      "printed_typebox": "Pirate Necromancer Action - Ally",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "1",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB017.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB017.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB017.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB018"
+      },
+      "card_id": "oysten-heart-of-gold-2",
+      "print_id": "SGB018",
+      "printed_name": "Oysten, Heart of Gold",
+      "printed_typebox": "Pirate Necromancer Action - Ally",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "1",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB018.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB018.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB018.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB019"
+      },
+      "card_id": "riggermortis-2",
+      "print_id": "SGB019",
+      "printed_name": "Riggermortis",
+      "printed_typebox": "Pirate Necromancer Action - Ally",
+      "printed_pitch": 2,
+      "printed_cost": "1",
+      "printed_power": "6",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "1",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB019.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB019.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB019.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB020"
+      },
+      "card_id": "swabbie-2",
+      "print_id": "SGB020",
+      "printed_name": "Swabbie",
+      "printed_typebox": "Pirate Necromancer Action - Ally",
+      "printed_pitch": 2,
+      "printed_cost": "3",
+      "printed_power": "7",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "3",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB020.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB020.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB020.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB021"
+      },
+      "card_id": "back-alley-breakline-3",
+      "print_id": "SGB021",
+      "printed_name": "Back Alley Breakline",
+      "printed_typebox": "Generic Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "1",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB021.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB021.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB021.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB022"
+      },
+      "card_id": "golden-tipple-3",
+      "print_id": "SGB022",
+      "printed_name": "Golden Tipple",
+      "printed_typebox": "Pirate Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "1",
+      "printed_power": "1",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB022.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB022.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB022.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB023"
+      },
+      "card_id": "jittery-bones-3",
+      "print_id": "SGB023",
+      "printed_name": "Jittery Bones",
+      "printed_typebox": "Pirate Necromancer Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB023.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB023.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB023.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB024"
+      },
+      "card_id": "murderous-rabble-3",
+      "print_id": "SGB024",
+      "printed_name": "Murderous Rabble",
+      "printed_typebox": "Pirate Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "0",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB024.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB024.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB024.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB025"
+      },
+      "card_id": "saltwater-swell-3",
+      "print_id": "SGB025",
+      "printed_name": "Saltwater Swell",
+      "printed_typebox": "Pirate Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "1",
+      "printed_power": "1",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB025.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB025.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB025.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB026"
+      },
+      "card_id": "swiftwater-sloop-3",
+      "print_id": "SGB026",
+      "printed_name": "Swiftwater Sloop",
+      "printed_typebox": "Pirate Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "2",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB026.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB026.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB026.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB027"
+      },
+      "card_id": "avast-ye-3",
+      "print_id": "SGB027",
+      "printed_name": "Avast Ye!",
+      "printed_typebox": "Pirate Necromancer Action",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB027.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB027.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB027.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB028"
+      },
+      "card_id": "flying-high-3",
+      "print_id": "SGB028",
+      "printed_name": "Flying High",
+      "printed_typebox": "Generic Action",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB028.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB028.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB028.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB029"
+      },
+      "card_id": "loot-the-arsenal-3",
+      "print_id": "SGB029",
+      "printed_name": "Loot the Arsenal",
+      "printed_typebox": "Pirate Necromancer Action",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB029.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB029.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB029.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB030"
+      },
+      "card_id": "loot-the-hold-3",
+      "print_id": "SGB030",
+      "printed_name": "Loot the Hold",
+      "printed_typebox": "Pirate Necromancer Action",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB030.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB030.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB030.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB031"
+      },
+      "card_id": "portside-exchange-3",
+      "print_id": "SGB031",
+      "printed_name": "Portside Exchange",
+      "printed_typebox": "Pirate Action",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB031.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB031.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB031.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB032"
+      },
+      "card_id": "timesnap-potion-3",
+      "print_id": "SGB032",
+      "printed_name": "Timesnap Potion",
+      "printed_typebox": "Generic Action - Item",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB032.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB032.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB032.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB033"
+      },
+      "card_id": "yo-ho-ho-3",
+      "print_id": "SGB033",
+      "printed_name": "Yo Ho Ho!",
+      "printed_typebox": "Pirate Necromancer Action",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB033.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB033.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB033.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB034"
+      },
+      "card_id": "throw-caution-to-the-wind-3",
+      "print_id": "SGB034",
+      "printed_name": "Throw Caution to the Wind",
+      "printed_typebox": "Pirate Instant",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB034.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB034.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB034.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SGB035"
+      },
+      "card_id": "gold",
+      "print_id": "SGB035",
+      "printed_name": "Gold",
+      "printed_typebox": "Generic Token - Item",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SGB035.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SGB035.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SGB035.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    }
+  ],
+  "product_name": "Silver Age Chapter 3 - Gravy Bones",
+  "description": "",
+  "banner_background_colour": null
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Silver Age</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Spectral:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css">
+  <script type="importmap">
+    { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <main id="menu">
+    <h1>Silver Age</h1>
+    <p id="status">Fetching decklists...</p>
+    <div class="pickers">
+      <section><h2>Your hero</h2><div id="list-you" class="decks"></div></section>
+      <section><h2>Opponent's hero</h2><div id="list-npc" class="decks"></div></section>
+    </div>
+    <button id="start" disabled>Start game</button>
+  </main>
+
+  <dialog id="equip">
+    <form method="dialog" id="equip-form">
+      <h2>Choose your equipment</h2>
+      <div id="equip-groups"></div>
+      <button id="equip-go" value="go">Deal cards</button>
+    </form>
+  </dialog>
+
+  <dialog id="deck-list">
+    <section class="deck-list-panel">
+      <header class="deck-list-header">
+        <h2 id="deck-list-title">Deck list</h2>
+        <button id="deck-list-back" type="button">Back</button>
+      </header>
+      <div id="deck-list-cards" class="deck-list-cards"></div>
+      <div id="card-preview" class="card-preview" hidden>
+        <div class="card-preview-content">
+          <button id="card-preview-back" type="button">Back to deck list</button>
+          <img id="card-preview-image" alt="">
+          <strong id="card-preview-name"></strong>
+          <small id="card-preview-type"></small>
+        </div>
+      </div>
+    </section>
+  </dialog>
+
+  <div id="hud" hidden></div>
+  <button id="quit" hidden>Back to menu</button>
+  <div id="stage" hidden></div>
+  <div id="initiative-status" hidden aria-live="polite"></div>
+
+  <script type="module" src="./script/main.js"></script>
+</body>
+</html>

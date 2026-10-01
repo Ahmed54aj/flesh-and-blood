@@ -1,0 +1,970 @@
+{
+  "release_date": "2026-02-13",
+  "cards": [
+    {
+      "languages": {
+        "en": "SFA001"
+      },
+      "card_id": "fai",
+      "print_id": "SFA001",
+      "printed_name": "Fai",
+      "printed_typebox": "Draconic Ninja Hero - Young",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "4",
+      "printed_life": "20",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA001.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA001.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA001.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA002"
+      },
+      "card_id": "searing-emberblade",
+      "print_id": "SFA002",
+      "printed_name": "Searing Emberblade",
+      "printed_typebox": "Draconic Ninja Weapon - Sword (2H)",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "3",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA002.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA002.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA002.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA003"
+      },
+      "card_id": "blade-beckoner-helm",
+      "print_id": "SFA003",
+      "printed_name": "Blade Beckoner Helm",
+      "printed_typebox": "Generic Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA003.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA003.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA003.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA004"
+      },
+      "card_id": "hope-merchants-hood",
+      "print_id": "SFA004",
+      "printed_name": "Hope Merchant's Hood",
+      "printed_typebox": "Generic Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA004.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA004.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA004.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA005"
+      },
+      "card_id": "mask-of-the-swarming-claw",
+      "print_id": "SFA005",
+      "printed_name": "Mask of the Swarming Claw",
+      "printed_typebox": "Ninja Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA005.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA005.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA005.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA006"
+      },
+      "card_id": "blood-scent",
+      "print_id": "SFA006",
+      "printed_name": "Blood Scent",
+      "printed_typebox": "Ninja Equipment - Chest",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA006.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA006.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA006.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA007"
+      },
+      "card_id": "double-cross-strap",
+      "print_id": "SFA007",
+      "printed_name": "Double Cross Strap",
+      "printed_typebox": "Ninja Equipment - Chest",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA007.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA007.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA007.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA008"
+      },
+      "card_id": "tearing-shuko",
+      "print_id": "SFA008",
+      "printed_name": "Tearing Shuko",
+      "printed_typebox": "Ninja Equipment - Arms",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA008.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA008.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA008.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA009"
+      },
+      "card_id": "pouncing-paws",
+      "print_id": "SFA009",
+      "printed_name": "Pouncing Paws",
+      "printed_typebox": "Ninja Equipment - Legs",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA009.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA009.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA009.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA010"
+      },
+      "card_id": "art-of-the-dragon-fire-1",
+      "print_id": "SFA010",
+      "printed_name": "Art of the Dragon: Fire",
+      "printed_typebox": "Ninja Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "5",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA010.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA010.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA010.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA011"
+      },
+      "card_id": "blaze-headlong-1",
+      "print_id": "SFA011",
+      "printed_name": "Blaze Headlong",
+      "printed_typebox": "Draconic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA011.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA011.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA011.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA012"
+      },
+      "card_id": "brand-with-cinderclaw-1",
+      "print_id": "SFA012",
+      "printed_name": "Brand with Cinderclaw",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA012.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA012.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA012.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA013"
+      },
+      "card_id": "display-loyalty-1",
+      "print_id": "SFA013",
+      "printed_name": "Display Loyalty",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA013.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA013.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA013.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA014"
+      },
+      "card_id": "enflame-the-firebrand-1",
+      "print_id": "SFA014",
+      "printed_name": "Enflame the Firebrand",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA014.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA014.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA014.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA015"
+      },
+      "card_id": "fire-tenet-strike-first-1",
+      "print_id": "SFA015",
+      "printed_name": "Fire Tenet: Strike First",
+      "printed_typebox": "Ninja Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA015.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA015.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA015.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA016"
+      },
+      "card_id": "fire-that-burns-within-1",
+      "print_id": "SFA016",
+      "printed_name": "Fire that Burns Within",
+      "printed_typebox": "Draconic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "2",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA016.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA016.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA016.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA017"
+      },
+      "card_id": "flamecall-awakening-1",
+      "print_id": "SFA017",
+      "printed_name": "Flamecall Awakening",
+      "printed_typebox": "Draconic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA017.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA017.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA017.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA018"
+      },
+      "card_id": "hot-on-their-heels-1",
+      "print_id": "SFA018",
+      "printed_name": "Hot on Their Heels",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA018.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA018.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA018.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA019"
+      },
+      "card_id": "lava-burst-1",
+      "print_id": "SFA019",
+      "printed_name": "Lava Burst",
+      "printed_typebox": "Draconic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA019.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA019.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA019.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA020"
+      },
+      "card_id": "mounting-anger-1",
+      "print_id": "SFA020",
+      "printed_name": "Mounting Anger",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA020.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA020.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA020.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA021"
+      },
+      "card_id": "phoenix-flame-1",
+      "print_id": "SFA021",
+      "printed_name": "Phoenix Flame",
+      "printed_typebox": "Draconic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "0",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA021.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA021.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA021.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA022"
+      },
+      "card_id": "rising-resentment-1",
+      "print_id": "SFA022",
+      "printed_name": "Rising Resentment",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA022.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA022.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA022.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA023"
+      },
+      "card_id": "ronin-renegade-1",
+      "print_id": "SFA023",
+      "printed_name": "Ronin Renegade",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "3",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA023.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA023.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA023.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA024"
+      },
+      "card_id": "scar-for-a-scar-1",
+      "print_id": "SFA024",
+      "printed_name": "Scar for a Scar",
+      "printed_typebox": "Generic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA024.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA024.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA024.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA025"
+      },
+      "card_id": "snatch-1",
+      "print_id": "SFA025",
+      "printed_name": "Snatch",
+      "printed_typebox": "Generic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "4",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA025.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA025.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA025.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA026"
+      },
+      "card_id": "wax-on-1",
+      "print_id": "SFA026",
+      "printed_name": "Wax On",
+      "printed_typebox": "Ninja Defense Reaction",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA026.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA026.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA026.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA027"
+      },
+      "card_id": "rise-from-the-ashes-1",
+      "print_id": "SFA027",
+      "printed_name": "Rise from the Ashes",
+      "printed_typebox": "Draconic Ninja Action",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA027.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA027.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA027.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA028"
+      },
+      "card_id": "arcane-polarity-1",
+      "print_id": "SFA028",
+      "printed_name": "Arcane Polarity",
+      "printed_typebox": "Generic Instant",
+      "printed_pitch": 1,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA028.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA028.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA028.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA029"
+      },
+      "card_id": "brand-with-cinderclaw-2",
+      "print_id": "SFA029",
+      "printed_name": "Brand with Cinderclaw",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA029.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA029.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA029.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA030"
+      },
+      "card_id": "salt-the-wound-2",
+      "print_id": "SFA030",
+      "printed_name": "Salt the Wound",
+      "printed_typebox": "Ninja Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA030.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA030.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA030.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA031"
+      },
+      "card_id": "brand-with-cinderclaw-3",
+      "print_id": "SFA031",
+      "printed_name": "Brand with Cinderclaw",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "1",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA031.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA031.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA031.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA032"
+      },
+      "card_id": "cinderskin-devotion-3",
+      "print_id": "SFA032",
+      "printed_name": "Cinderskin Devotion",
+      "printed_typebox": "Draconic Ninja Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "1",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA032.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA032.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA032.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA033"
+      },
+      "card_id": "dragon-power-3",
+      "print_id": "SFA033",
+      "printed_name": "Dragon Power",
+      "printed_typebox": "Ninja Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "1",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA033.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA033.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA033.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA034"
+      },
+      "card_id": "nip-at-the-heels-3",
+      "print_id": "SFA034",
+      "printed_name": "Nip at the Heels",
+      "printed_typebox": "Generic Attack Reaction",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA034.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA034.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA034.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA035"
+      },
+      "card_id": "energy-potion-3",
+      "print_id": "SFA035",
+      "printed_name": "Energy Potion",
+      "printed_typebox": "Generic Action - Item",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA035.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA035.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA035.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA036"
+      },
+      "card_id": "crouching-tiger",
+      "print_id": "SFA036",
+      "printed_name": "Crouching Tiger",
+      "printed_typebox": "Ninja Action - Attack",
+      "printed_pitch": null,
+      "printed_cost": "0",
+      "printed_power": "0",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA036.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA036.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA036.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SFA037"
+      },
+      "card_id": "fealty",
+      "print_id": "SFA037",
+      "printed_name": "Fealty",
+      "printed_typebox": "Draconic Token - Aura",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SFA037.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SFA037.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SFA037.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    }
+  ],
+  "product_name": "Silver Age Chapter 2 - Fai",
+  "description": "",
+  "banner_background_colour": null
+}

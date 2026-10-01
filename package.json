@@ -1,0 +1,7 @@
+{
+  "name": "fab-silver-age-game",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": { "start": "node scripts/serve-static.js", "dev": "node --watch scripts/serve-static.js", "backup:decks": "node scripts/fetch-deck-backups.js", "build:pages": "node scripts/build-pages.js" },
+  "engines": { "node": ">=18" }
+}

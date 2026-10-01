@@ -1,0 +1,1010 @@
+{
+  "release_date": "2026-02-13",
+  "cards": [
+    {
+      "languages": {
+        "en": "SEN001"
+      },
+      "card_id": "enigma",
+      "print_id": "SEN001",
+      "printed_name": "Enigma",
+      "printed_typebox": "Mystic Illusionist Hero - Young",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "4",
+      "printed_life": "20",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN001.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN001.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN001.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN002"
+      },
+      "card_id": "cosmo-scroll-of-ancestral-tapestry",
+      "print_id": "SEN002",
+      "printed_name": "Cosmo, Scroll of Ancestral Tapestry",
+      "printed_typebox": "Illusionist Weapon - Scroll (2H)",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN002.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN002.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN002.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN003"
+      },
+      "card_id": "blade-beckoner-helm",
+      "print_id": "SEN003",
+      "printed_name": "Blade Beckoner Helm",
+      "printed_typebox": "Generic Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN003.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN003.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN003.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN004"
+      },
+      "card_id": "nullrune-hood",
+      "print_id": "SEN004",
+      "printed_name": "Nullrune Hood",
+      "printed_typebox": "Generic Equipment - Head",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN004.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN004.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN004.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN005"
+      },
+      "card_id": "blossom-of-spring",
+      "print_id": "SEN005",
+      "printed_name": "Blossom of Spring",
+      "printed_typebox": "Generic Equipment - Chest",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN005.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN005.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN005.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN006"
+      },
+      "card_id": "nullrune-robe",
+      "print_id": "SEN006",
+      "printed_name": "Nullrune Robe",
+      "printed_typebox": "Generic Equipment - Chest",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN006.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN006.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN006.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN007"
+      },
+      "card_id": "uphold-tradition",
+      "print_id": "SEN007",
+      "printed_name": "Uphold Tradition",
+      "printed_typebox": "Mystic Illusionist Equipment - Arms",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN007.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN007.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN007.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN008"
+      },
+      "card_id": "blade-beckoner-boots",
+      "print_id": "SEN008",
+      "printed_name": "Blade Beckoner Boots",
+      "printed_typebox": "Generic Equipment - Legs",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "1",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN008.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN008.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN008.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN009"
+      },
+      "card_id": "silent-stilettos",
+      "print_id": "SEN009",
+      "printed_name": "Silent Stilettos",
+      "printed_typebox": "Illusionist Equipment - Legs",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "0",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN009.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN009.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN009.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN010"
+      },
+      "card_id": "enigma-chimera-1",
+      "print_id": "SEN010",
+      "printed_name": "Enigma Chimera",
+      "printed_typebox": "Illusionist Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "2",
+      "printed_power": "8",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN010.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN010.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN010.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN011"
+      },
+      "card_id": "look-tuff-1",
+      "print_id": "SEN011",
+      "printed_name": "Look Tuff",
+      "printed_typebox": "Generic Action - Attack",
+      "printed_pitch": 1,
+      "printed_cost": "3",
+      "printed_power": "8",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN011.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN011.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN011.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN012"
+      },
+      "card_id": "unmovable-1",
+      "print_id": "SEN012",
+      "printed_name": "Unmovable",
+      "printed_typebox": "Generic Defense Reaction",
+      "printed_pitch": 1,
+      "printed_cost": "3",
+      "printed_power": "",
+      "printed_defense": "7",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN012.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN012.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN012.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN013"
+      },
+      "card_id": "astral-etchings-1",
+      "print_id": "SEN013",
+      "printed_name": "Astral Etchings",
+      "printed_typebox": "Illusionist Action",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN013.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN013.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN013.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN014"
+      },
+      "card_id": "spectral-manifestations-1",
+      "print_id": "SEN014",
+      "printed_name": "Spectral Manifestations",
+      "printed_typebox": "Illusionist Action",
+      "printed_pitch": 1,
+      "printed_cost": "2",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN014.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN014.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN014.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN015"
+      },
+      "card_id": "waning-vengeance-1",
+      "print_id": "SEN015",
+      "printed_name": "Waning Vengeance",
+      "printed_typebox": "Mystic Illusionist Instant - Aura",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN015.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN015.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN015.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN016"
+      },
+      "card_id": "waxing-specter-1",
+      "print_id": "SEN016",
+      "printed_name": "Waxing Specter",
+      "printed_typebox": "Mystic Illusionist Instant - Aura",
+      "printed_pitch": 1,
+      "printed_cost": "2",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN016.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN016.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN016.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN017"
+      },
+      "card_id": "oasis-respite-1",
+      "print_id": "SEN017",
+      "printed_name": "Oasis Respite",
+      "printed_typebox": "Generic Instant",
+      "printed_pitch": 1,
+      "printed_cost": "1",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN017.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN017.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN017.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN018"
+      },
+      "card_id": "on-the-horizon-1",
+      "print_id": "SEN018",
+      "printed_name": "On the Horizon",
+      "printed_typebox": "Generic Block",
+      "printed_pitch": 1,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "4",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN018.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN018.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN018.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN019"
+      },
+      "card_id": "test-of-strength-1",
+      "print_id": "SEN019",
+      "printed_name": "Test of Strength",
+      "printed_typebox": "Generic Block",
+      "printed_pitch": 1,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "4",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN019.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN019.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN019.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN020"
+      },
+      "card_id": "springboard-somersault-2",
+      "print_id": "SEN020",
+      "printed_name": "Springboard Somersault",
+      "printed_typebox": "Generic Defense Reaction",
+      "printed_pitch": 2,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN020.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN020.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN020.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN021"
+      },
+      "card_id": "enigma-chimera-2",
+      "print_id": "SEN021",
+      "printed_name": "Enigma Chimera",
+      "printed_typebox": "Illusionist Action - Attack",
+      "printed_pitch": 2,
+      "printed_cost": "3",
+      "printed_power": "6",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN021.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN021.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN021.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN022"
+      },
+      "card_id": "fluid-motion-3",
+      "print_id": "SEN022",
+      "printed_name": "Fluid Motion",
+      "printed_typebox": "Mystic Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "2",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN022.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN022.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN022.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN023"
+      },
+      "card_id": "manifest-muscle-3",
+      "print_id": "SEN023",
+      "printed_name": "Manifest Muscle",
+      "printed_typebox": "Mystic Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "3",
+      "printed_power": "5",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN023.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN023.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN023.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN024"
+      },
+      "card_id": "phantasmal-haze-3",
+      "print_id": "SEN024",
+      "printed_name": "Phantasmal Haze",
+      "printed_typebox": "Illusionist Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "3",
+      "printed_power": "6",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN024.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN024.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN024.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN025"
+      },
+      "card_id": "second-tenet-of-chi-wind-3",
+      "print_id": "SEN025",
+      "printed_name": "Second Tenet of Chi: Wind",
+      "printed_typebox": "Mystic Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "3",
+      "printed_power": "5",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN025.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN025.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN025.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN026"
+      },
+      "card_id": "spears-of-surreality-3",
+      "print_id": "SEN026",
+      "printed_name": "Spears of Surreality",
+      "printed_typebox": "Illusionist Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "1",
+      "printed_power": "3",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN026.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN026.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN026.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN027"
+      },
+      "card_id": "spectral-rider-3",
+      "print_id": "SEN027",
+      "printed_name": "Spectral Rider",
+      "printed_typebox": "Illusionist Action - Attack",
+      "printed_pitch": 3,
+      "printed_cost": "3",
+      "printed_power": "6",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN027.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN027.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN027.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN028"
+      },
+      "card_id": "big-blue-sky-3",
+      "print_id": "SEN028",
+      "printed_name": "Big Blue Sky",
+      "printed_typebox": "Mystic Defense Reaction",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "2",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN028.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN028.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN028.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN029"
+      },
+      "card_id": "put-in-context-3",
+      "print_id": "SEN029",
+      "printed_name": "Put in Context",
+      "printed_typebox": "Generic Defense Reaction",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "3",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN029.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN029.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN029.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN030"
+      },
+      "card_id": "unmovable-3",
+      "print_id": "SEN030",
+      "printed_name": "Unmovable",
+      "printed_typebox": "Generic Defense Reaction",
+      "printed_pitch": 3,
+      "printed_cost": "3",
+      "printed_power": "",
+      "printed_defense": "5",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN030.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN030.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN030.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN031"
+      },
+      "card_id": "a-drop-in-the-ocean-3--inner-chi-3",
+      "print_id": "SEN031",
+      "printed_name": "A Drop in the Ocean",
+      "printed_typebox": "Mystic Instant",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN031.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN031.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN031.webp"
+          },
+          "layout_position": 10
+        },
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN031_BACK.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN031_BACK.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN031_BACK.webp"
+          },
+          "layout_position": 20
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN032"
+      },
+      "card_id": "homage-to-ancestors-3--inner-chi-3",
+      "print_id": "SEN032",
+      "printed_name": "Homage to Ancestors",
+      "printed_typebox": "Mystic Instant",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN032.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN032.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN032.webp"
+          },
+          "layout_position": 10
+        },
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN032_BACK.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN032_BACK.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN032_BACK.webp"
+          },
+          "layout_position": 20
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN033"
+      },
+      "card_id": "pass-over-3--inner-chi-3",
+      "print_id": "SEN033",
+      "printed_name": "Pass Over",
+      "printed_typebox": "Mystic Instant",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN033.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN033.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN033.webp"
+          },
+          "layout_position": 10
+        },
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN033_BACK.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN033_BACK.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN033_BACK.webp"
+          },
+          "layout_position": 20
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN034"
+      },
+      "card_id": "preserve-tradition-3--inner-chi-3",
+      "print_id": "SEN034",
+      "printed_name": "Preserve Tradition",
+      "printed_typebox": "Mystic Instant",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN034.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN034.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN034.webp"
+          },
+          "layout_position": 10
+        },
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN034_BACK.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN034_BACK.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN034_BACK.webp"
+          },
+          "layout_position": 20
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN035"
+      },
+      "card_id": "rising-sun-setting-moon-3--inner-chi-3",
+      "print_id": "SEN035",
+      "printed_name": "Rising Sun, Setting Moon",
+      "printed_typebox": "Mystic Instant",
+      "printed_pitch": 3,
+      "printed_cost": "0",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN035.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN035.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN035.webp"
+          },
+          "layout_position": 10
+        },
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN035_BACK.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN035_BACK.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN035_BACK.webp"
+          },
+          "layout_position": 20
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN036"
+      },
+      "card_id": "gold",
+      "print_id": "SEN036",
+      "printed_name": "Gold",
+      "printed_typebox": "Generic Token - Item",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN036.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN036.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN036.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    },
+    {
+      "languages": {
+        "en": "SEN037"
+      },
+      "card_id": "spectral-shield",
+      "print_id": "SEN037",
+      "printed_name": "Spectral Shield",
+      "printed_typebox": "Illusionist Token - Aura",
+      "printed_pitch": null,
+      "printed_cost": "",
+      "printed_power": "",
+      "printed_defense": "",
+      "printed_intellect": "",
+      "printed_life": "",
+      "orientation": "vertical",
+      "faces": [
+        {
+          "image": {
+            "small": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/small/SEN037.webp",
+            "normal": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/normal/SEN037.webp",
+            "large": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/SEN037.webp"
+          },
+          "layout_position": 10
+        }
+      ]
+    }
+  ],
+  "product_name": "Silver Age Chapter 2 - Enigma",
+  "description": "",
+  "banner_background_colour": null
+}

@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "chapter": 1,
+      "name": "Silver Age Chapter 1 - Bravo, Flattering Showman",
+      "slug": "silver-age-chapter-1-bravo-flattering-showman",
+      "filename": "bravo-flattering-showman.json"
+    },
+    {
+      "chapter": 1,
+      "name": "Silver Age Chapter 1 - Dash",
+      "slug": "silver-age-chapter-1-dash",
+      "filename": "dash.json"
+    },
+    {
+      "chapter": 1,
+      "name": "Silver Age Chapter 1 - Iyslander",
+      "slug": "silver-age-chapter-1-iyslander",
+      "filename": "iyslander.json"
+    },
+    {
+      "chapter": 1,
+      "name": "Silver Age Chapter 1 - Kayo",
+      "slug": "silver-age-chapter-1-kayo",
+      "filename": "kayo.json"
+    },
+    {
+      "chapter": 1,
+      "name": "Silver Age Chapter 1 - Viserai",
+      "slug": "silver-age-chapter-1-viserai",
+      "filename": "viserai.json"
+    },
+    {
+      "chapter": 2,
+      "name": "Silver Age Chapter 2 - Arakni, Web of Deceit",
+      "slug": "silver-age-chapter-2-arakni-web-of-deceit",
+      "filename": "arakni-web-of-deceit.json"
+    },
+    {
+      "chapter": 2,
+      "name": "Silver Age Chapter 2 - Azalea",
+      "slug": "silver-age-chapter-2-azalea",
+      "filename": "azalea.json"
+    },
+    {
+      "chapter": 2,
+      "name": "Silver Age Chapter 2 - Dorinthea",
+      "slug": "silver-age-chapter-2-dorinthea",
+      "filename": "dorinthea.json"
+    },
+    {
+      "chapter": 2,
+      "name": "Silver Age Chapter 2 - Enigma",
+      "slug": "silver-age-chapter-2-enigma",
+      "filename": "enigma.json"
+    },
+    {
+      "chapter": 2,
+      "name": "Silver Age Chapter 2 - Fai",
+      "slug": "silver-age-chapter-2-fai",
+      "filename": "fai.json"
+    },
+    {
+      "chapter": 3,
+      "name": "Silver Age Chapter 3 - Blaze, Firemind",
+      "slug": "silver-age-chapter-3-blaze-firemind",
+      "filename": "blaze-firemind.json"
+    },
+    {
+      "chapter": 3,
+      "name": "Silver Age Chapter 3 - Boltyn",
+      "slug": "silver-age-chapter-3-boltyn",
+      "filename": "boltyn.json"
+    },
+    {
+      "chapter": 3,
+      "name": "Silver Age Chapter 3 - Briar",
+      "slug": "silver-age-chapter-3-briar",
+      "filename": "briar.json"
+    },
+    {
+      "chapter": 3,
+      "name": "Silver Age Chapter 3 - Gravy Bones",
+      "slug": "silver-age-chapter-3-gravy-bones",
+      "filename": "gravy-bones.json"
+    },
+    {
+      "chapter": 3,
+      "name": "Silver Age Chapter 3 - Lyath Goldmane",
+      "slug": "silver-age-chapter-3-lyath-goldmane",
+      "filename": "lyath-goldmane.json"
+    }
+  ]
+}
