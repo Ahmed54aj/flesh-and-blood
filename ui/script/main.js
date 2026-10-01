@@ -2,7 +2,10 @@ import { createStage } from './scene.js';
 import { newPlayer, draw, groupBySlot, npcPickEquipment, SINGLE_SLOTS } from './game.js';
 
 const $ = (s) => document.querySelector(s);
-const state = { products: [], deckCache: new Map(), you: null, npc: null, stage: null };
+const state = {
+  products: [], deckCache: new Map(), you: null, npc: null, stage: null,
+  pickerIndex: { you: 0, npc: 0 }, pickerRender: { you: 0, npc: 0 }, pickerDirection: { you: '', npc: '' },
+};
 const APP_ROOT = new URL('../', import.meta.url);
 const PRODUCT_GROUPS_URL = 'https://api.cardvault.fabtcg.com/carddb/api/v1/product-groups-products/?page_size=150';
 const PRODUCT_CARDS_URL = 'https://api.cardvault.fabtcg.com/carddb/api/v1/product-cards/';
@@ -145,45 +148,173 @@ async function loadDecks() {
     status.classList.add('err');
   }
   renderList('you');
-  renderList('npc');
+}
+
+function movePicker(who, index, direction) {
+  const previous = state.pickerIndex[who];
+  const next = (index + state.products.length) % state.products.length;
+  if (next === previous) return;
+  state.pickerIndex[who] = next;
+  state.pickerDirection[who] = direction || (next === (previous + 1) % state.products.length ? 'next' : 'previous');
+  $('#start').disabled = true;
+  $('#status').textContent = `Loading ${state.products[next].name}...`;
+  renderList(who);
+}
+
+function renderDeckPreview(who, deck, product) {
+  const preview = $(`#preview-${who}`);
+  preview.replaceChildren();
+  const heading = document.createElement('h3');
+  heading.textContent = 'Deck preview';
+  const cards = document.createElement('ul');
+  cards.className = 'deck-preview-cards';
+  for (const card of deck.cards.slice(0, 8)) {
+    const item = document.createElement('li');
+    item.textContent = card.name;
+    cards.append(item);
+  }
+  const view = document.createElement('button');
+  view.type = 'button';
+  view.className = 'deck-view';
+  view.textContent = 'View full deck';
+  view.onclick = () => openDeckList(product);
+  const choose = document.createElement('button');
+  choose.type = 'button';
+  choose.className = 'choose-hero';
+  choose.textContent = `Choose ${who === 'you' ? 'your' : 'opponent'} hero`;
+  choose.onclick = () => confirmHero(who, product);
+  preview.append(heading, cards, choose, view);
 }
 
 function renderList(who) {
-  const el = $(`#list-${who}`);
-  el.innerHTML = '';
-  for (const product of state.products) {
-    const row = document.createElement('div');
-    row.className = 'deck-row';
-    const select = document.createElement('button');
-    select.type = 'button';
-    const heroName = product.name.replace(/^Silver Age Chapter [1-3] - /, '');
-    select.className = 'deck deck-select' + (state[who]?.id === product.slug ? ' sel' : '');
-    select.append(document.createTextNode(heroName));
-    const chapter = document.createElement('small');
-    chapter.textContent = `Chapter ${product.chapter}`;
-    select.append(chapter);
-    select.onclick = async () => {
-      select.disabled = true;
-      $('#status').textContent = `Loading ${product.name}...`;
-      try {
-        state[who] = await fetchProductDetails(product);
-        renderList(who);
-        $('#start').disabled = !(state.you && state.npc);
-        $('#status').textContent = `${who === 'you' ? 'Your' : 'Opponent'} hero: ${state[who].hero.name}`;
-      } catch (error) {
-        console.error(`Could not load ${product.name}:`, error);
-        $('#status').textContent = `Could not load ${product.name} from Card Vault or the saved backup.`;
-        select.disabled = false;
+  if (!state.products.length) return;
+  const index = state.pickerIndex[who];
+  const token = ++state.pickerRender[who];
+  const track = $(`#list-${who}`);
+  const direction = state.pickerDirection[who];
+  track.classList.remove('moving-next', 'moving-previous');
+  if (direction) track.classList.add(`moving-${direction}`);
+  state.pickerDirection[who] = '';
+  track.onanimationend = (event) => {
+    if (event.target.classList.contains('active')) track.classList.remove('moving-next', 'moving-previous');
+  };
+  const products = [-1, 0, 1].map((offset) => ({
+    product: state.products[(index + offset + state.products.length) % state.products.length],
+    offset,
+  }));
+  track.replaceChildren();
+
+  for (const { product, offset } of products) {
+    const slide = document.createElement('button');
+    slide.type = 'button';
+    slide.className = `hero-slide${offset === 0 ? ' active' : ''}`;
+    slide.dataset.index = String(state.products.indexOf(product));
+    slide.setAttribute('aria-label', `${product.name.replace(/^Silver Age Chapter [1-3] - /, '')}, Chapter ${product.chapter}`);
+    const image = document.createElement('img');
+    image.alt = '';
+    image.loading = 'lazy';
+    const placeholder = document.createElement('span');
+    placeholder.className = 'hero-card-placeholder';
+    placeholder.textContent = product.name.replace(/^Silver Age Chapter [1-3] - /, '');
+    slide.append(image, placeholder);
+    slide.onclick = () => {
+      if (offset !== 0) {
+        movePicker(who, Number(slide.dataset.index), offset < 0 ? 'previous' : 'next');
+        return;
       }
+      fetchProductDetails(product).then((deck) => {
+        const heroCard = deck.allCards.find((card) => /\bHero\b/i.test(card.type)) || {
+          name: deck.hero.name, type: 'Hero', image: deck.hero.image,
+        };
+        showCardPreview(heroCard);
+      }).catch((error) => {
+        console.error(`Could not preview ${product.name}:`, error);
+        $('#status').textContent = `Could not preview ${product.name}.`;
+      });
     };
-    const view = document.createElement('button');
-    view.type = 'button';
-    view.className = 'deck-view';
-    view.textContent = 'View deck list';
-    view.onclick = () => openDeckList(product);
-    row.append(select, view);
-    el.append(row);
+    track.append(slide);
+
+    fetchProductDetails(product).then((deck) => {
+      if (token !== state.pickerRender[who]) return;
+      image.src = deck.hero.image || '';
+      image.alt = deck.hero.name;
+      placeholder.hidden = true;
+      if (offset === 0) {
+        $(`#name-${who}`).textContent = deck.hero.name;
+        $(`#chapter-${who}`).textContent = `Chapter ${product.chapter}`;
+        renderDeckPreview(who, deck, product);
+        $('#status').textContent = `${deck.hero.name} is ready to choose.`;
+      }
+    }).catch((error) => {
+      if (token !== state.pickerRender[who]) return;
+      console.error(`Could not load ${product.name}:`, error);
+      if (offset === 0) {
+        $(`#name-${who}`).textContent = product.name.replace(/^Silver Age Chapter [1-3] - /, '');
+        $(`#chapter-${who}`).textContent = `Chapter ${product.chapter}`;
+        $('#status').textContent = `Could not load ${product.name} from Card Vault or the saved backup.`;
+      }
+    });
   }
+
+  const preloadIndex = (index + (direction === 'previous' ? -2 : 2) + state.products.length) % state.products.length;
+  const preloadProduct = state.products[preloadIndex];
+  fetchProductDetails(preloadProduct).then((deck) => {
+    if (!deck.hero.image) return;
+    const preload = new Image();
+    preload.src = deck.hero.image;
+  }).catch(() => {});
+}
+
+async function confirmHero(who, product) {
+  try {
+    const deck = await fetchProductDetails(product);
+    state[who] = deck;
+    if (who === 'you') {
+      $('#picker-you').hidden = true;
+      $('#picker-npc').hidden = false;
+      renderList('npc');
+      $('#status').textContent = 'Your hero is set. Choose the opponent hero.';
+      return;
+    }
+    $('#picker-npc').hidden = true;
+    $('#selection-summary').hidden = false;
+    $('#selected-you').textContent = state.you.hero.name;
+    $('#selected-npc').textContent = deck.hero.name;
+    $('#start').disabled = false;
+    $('#status').textContent = 'Both heroes are ready.';
+  } catch (error) {
+    console.error(`Could not select ${product.name}:`, error);
+    $('#status').textContent = `Could not load ${product.name} from Card Vault or the saved backup.`;
+  }
+}
+
+for (const who of ['you', 'npc']) {
+  $(`#previous-${who}`).onclick = () => movePicker(who, state.pickerIndex[who] - 1, 'previous');
+  $(`#next-${who}`).onclick = () => movePicker(who, state.pickerIndex[who] + 1, 'next');
+
+  const viewport = $(`#viewport-${who}`);
+  let dragStartX = null;
+  let suppressClick = false;
+  viewport.addEventListener('pointerdown', (event) => {
+    if (event.button !== 0) return;
+    dragStartX = event.clientX;
+  });
+  viewport.addEventListener('pointerup', (event) => {
+    if (dragStartX === null) return;
+    const distance = event.clientX - dragStartX;
+    dragStartX = null;
+    if (Math.abs(distance) < 42) return;
+    suppressClick = true;
+    movePicker(who, state.pickerIndex[who] + (distance < 0 ? 1 : -1));
+    setTimeout(() => { suppressClick = false; }, 0);
+  });
+  viewport.addEventListener('pointercancel', () => { dragStartX = null; });
+  viewport.addEventListener('click', (event) => {
+    if (!suppressClick) return;
+    event.preventDefault();
+    event.stopPropagation();
+    suppressClick = false;
+  }, true);
 }
 
 async function openDeckList(product) {
@@ -225,11 +356,15 @@ function showCardPreview(card) {
   image.alt = card.name;
   $('#card-preview-name').textContent = card.name;
   $('#card-preview-type').textContent = card.type;
-  preview.hidden = false;
+  if (!preview.open) {
+    if (!$('#deck-list').open) setMenuLocked(true);
+    preview.showModal();
+  }
 }
 
 function closeCardPreview() {
-  $('#card-preview').hidden = true;
+  const preview = $('#card-preview');
+  if (preview.open) preview.close();
   $('#card-preview-image').style.transform = '';
 }
 
@@ -329,6 +464,22 @@ async function startGame() {
 }
 
 $('#start').onclick = startGame;
+$(`#change-you`).onclick = () => {
+  state.you = null;
+  state.npc = null;
+  $('#selection-summary').hidden = true;
+  $('#picker-npc').hidden = true;
+  $('#picker-you').hidden = false;
+  $('#start').disabled = true;
+  $('#status').textContent = 'Choose your hero.';
+};
+$(`#change-npc`).onclick = () => {
+  state.npc = null;
+  $('#selection-summary').hidden = true;
+  $('#picker-npc').hidden = false;
+  $('#start').disabled = true;
+  $('#status').textContent = 'Choose the opponent hero.';
+};
 $('#quit').onclick = () => {
   for (const id of ['#stage', '#hud', '#quit']) $(id).hidden = true;
   $('#menu').hidden = false;
@@ -337,6 +488,9 @@ $('#deck-list-back').onclick = () => $('#deck-list').close();
 $('#card-preview-back').onclick = closeCardPreview;
 $('#card-preview').addEventListener('click', (event) => {
   if (event.target === event.currentTarget || event.target === $('#card-preview-image')) closeCardPreview();
+});
+$('#card-preview').addEventListener('close', () => {
+  if (!$('#deck-list').open) setMenuLocked(false);
 });
 $('#card-preview-image').addEventListener('pointermove', (event) => {
   const rect = event.currentTarget.getBoundingClientRect();

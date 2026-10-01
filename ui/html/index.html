@@ -16,9 +16,34 @@
     <h1>Silver Age</h1>
     <p id="status">Fetching decklists...</p>
     <div class="pickers">
-      <section><h2>Your hero</h2><div id="list-you" class="decks"></div></section>
-      <section><h2>Opponent's hero</h2><div id="list-npc" class="decks"></div></section>
+      <section class="hero-picker" id="picker-you" aria-label="Choose your hero">
+        <h2>Your hero</h2>
+        <div class="carousel-heading"><strong id="name-you">Loading hero...</strong><small id="chapter-you"></small></div>
+        <div class="carousel" id="carousel-you">
+          <button class="carousel-arrow previous" id="previous-you" type="button" aria-label="Previous hero">&#8592;</button>
+          <div class="carousel-viewport" id="viewport-you"><div class="carousel-track" id="list-you"></div></div>
+          <button class="carousel-arrow next" id="next-you" type="button" aria-label="Next hero">&#8594;</button>
+        </div>
+        <div class="deck-preview" id="preview-you" aria-live="polite"></div>
+      </section>
+      <section class="hero-picker" id="picker-npc" aria-label="Choose the opponent's hero" hidden>
+        <h2>Opponent's hero</h2>
+        <div class="carousel-heading"><strong id="name-npc">Loading hero...</strong><small id="chapter-npc"></small></div>
+        <div class="carousel" id="carousel-npc">
+          <button class="carousel-arrow previous" id="previous-npc" type="button" aria-label="Previous hero">&#8592;</button>
+          <div class="carousel-viewport" id="viewport-npc"><div class="carousel-track" id="list-npc"></div></div>
+          <button class="carousel-arrow next" id="next-npc" type="button" aria-label="Next hero">&#8594;</button>
+        </div>
+        <div class="deck-preview" id="preview-npc" aria-live="polite"></div>
+      </section>
     </div>
+    <section id="selection-summary" hidden aria-live="polite">
+      <h2>Selected heroes</h2>
+      <p><strong>You:</strong> <span id="selected-you"></span></p>
+      <p><strong>Opponent:</strong> <span id="selected-npc"></span></p>
+      <button id="change-you" type="button">Change your hero</button>
+      <button id="change-npc" type="button">Change opponent</button>
+    </section>
     <button id="start" disabled>Start game</button>
   </main>
 
@@ -37,15 +62,16 @@
         <button id="deck-list-back" type="button">Back</button>
       </header>
       <div id="deck-list-cards" class="deck-list-cards"></div>
-      <div id="card-preview" class="card-preview" hidden>
-        <div class="card-preview-content">
-          <button id="card-preview-back" type="button">Back to deck list</button>
-          <img id="card-preview-image" alt="">
-          <strong id="card-preview-name"></strong>
-          <small id="card-preview-type"></small>
-        </div>
-      </div>
     </section>
+  </dialog>
+
+  <dialog id="card-preview" class="card-preview">
+    <div class="card-preview-content">
+      <button id="card-preview-back" type="button">Close preview</button>
+      <img id="card-preview-image" alt="">
+      <strong id="card-preview-name"></strong>
+      <small id="card-preview-type"></small>
+    </div>
   </dialog>
 
   <div id="hud" hidden></div>
