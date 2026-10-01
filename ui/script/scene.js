@@ -158,11 +158,35 @@ export function createStage(host, cardBackUrl) {
   let hovered = null;
   let preview = null;
   let initiativeActive = false;
+  let boardScaleX = 1;
 
   function resize() {
     const { clientWidth: w, clientHeight: h } = host;
+    const aspect = w / h;
+    const nextScale = THREE.MathUtils.clamp(aspect / 1.08, 0.32, 1);
+    if (nextScale !== boardScaleX) {
+      const ratio = nextScale / boardScaleX;
+      for (const mesh of group.children) {
+        mesh.position.x *= ratio;
+        if (mesh.userData.restPosition) mesh.userData.restPosition.x *= ratio;
+      }
+      for (const tween of tweens) {
+        tween.from.x *= ratio;
+        tween.to.x *= ratio;
+      }
+      if (preview) preview.sourcePosition.x *= ratio;
+      for (const die of diceGroup.children) die.position.x *= ratio;
+      for (const animation of diceAnimations) {
+        animation.startPosition.x *= ratio;
+        animation.targetPosition.x *= ratio;
+      }
+      boardScaleX = nextScale;
+    }
     renderer.setSize(w, h);
-    camera.aspect = w / h;
+    camera.aspect = aspect;
+    const cameraFactor = aspect < 0.68 ? 1.16 : aspect < 1 ? 1.06 : 1;
+    camera.position.set(0, 9 * cameraFactor, 6.5 * cameraFactor);
+    camera.lookAt(0, 0, 0.3);
     camera.updateProjectionMatrix();
   }
   addEventListener('resize', resize);
@@ -195,8 +219,8 @@ export function createStage(host, cardBackUrl) {
       hovered = null;
       const youDie = createD20();
       const npcDie = createD20();
-      youDie.mesh.position.set(-1.5, D20_REST_Y, 2.4);
-      npcDie.mesh.position.set(1.5, D20_REST_Y, -2.4);
+      youDie.mesh.position.set(-1.5 * boardScaleX, D20_REST_Y, 2.4);
+      npcDie.mesh.position.set(1.5 * boardScaleX, D20_REST_Y, -2.4);
       diceGroup.add(youDie.mesh, npcDie.mesh);
 
       const canvas = renderer.domElement;
@@ -248,7 +272,7 @@ export function createStage(host, cardBackUrl) {
         const result = 1 + Math.floor(Math.random() * 20);
         const throwVector = drag.current.clone().sub(drag.origin);
         const target = youDie.mesh.position.clone().addScaledVector(throwVector, 0.4);
-        target.x = THREE.MathUtils.clamp(target.x, -5.5, 5.5);
+        target.x = THREE.MathUtils.clamp(target.x, -5.5 * boardScaleX, 5.5 * boardScaleX);
         target.z = THREE.MathUtils.clamp(target.z, 0.7, 4.2);
         target.y = D20_REST_Y;
         onStatus('Your d20 is rolling...');
@@ -259,7 +283,7 @@ export function createStage(host, cardBackUrl) {
             phase = 'npc-rolling';
             const npcResult = 1 + Math.floor(Math.random() * 20);
             const npcTarget = new THREE.Vector3(
-              THREE.MathUtils.randFloat(-4, 4),
+              THREE.MathUtils.randFloat(-4, 4) * boardScaleX,
               D20_REST_Y,
               THREE.MathUtils.randFloat(-4.2, -0.7),
             );
@@ -269,8 +293,8 @@ export function createStage(host, cardBackUrl) {
                 onStatus(`Both rolled ${result}. Tie! Drag your d20 to roll again.`);
                 phase = 'tie-reset';
                 setTimeout(() => {
-                  youDie.mesh.position.set(-1.5, D20_REST_Y, 2.4);
-                  npcDie.mesh.position.set(1.5, D20_REST_Y, -2.4);
+                  youDie.mesh.position.set(-1.5 * boardScaleX, D20_REST_Y, 2.4);
+                  npcDie.mesh.position.set(1.5 * boardScaleX, D20_REST_Y, -2.4);
                   youDie.mesh.quaternion.identity();
                   npcDie.mesh.quaternion.identity();
                   phase = 'you';
@@ -302,7 +326,7 @@ export function createStage(host, cardBackUrl) {
           if (point) {
             drag.current.copy(point);
             youDie.mesh.position.set(
-              THREE.MathUtils.clamp(point.x, -5.5, 5.5),
+              THREE.MathUtils.clamp(point.x, -5.5 * boardScaleX, 5.5 * boardScaleX),
               D20_REST_Y,
               THREE.MathUtils.clamp(point.z, 0.7, 4.2),
             );
@@ -342,24 +366,24 @@ export function createStage(host, cardBackUrl) {
   function deal(sideSign, player, { showHand }) {
     const z = 1.7 * sideSign;
     const h = makeCard({ name: player.hero.name, image: player.hero.image, label: 'Hero' }, true);
-    h.position.set(-4.4, T / 2, z);
+    h.position.set(-4.4 * boardScaleX, T / 2, z);
     h.userData.restPosition = h.position.clone();
     clickableCards.push(h);
 
     player.equipment.forEach((e, i) => {
       const c = makeCard({ name: e.name, image: e.image, label: e.slot }, true);
-      c.position.set(-3.3 + i * 0.85, T / 2, z);
+      c.position.set((-3.3 + i * 0.85) * boardScaleX, T / 2, z);
       c.userData.restPosition = c.position.clone();
       clickableCards.push(c);
     });
 
     let remaining = player.library.length + player.hand.length;
-    const stack = makeDeckStack(4.4, z, remaining);
+    const stack = makeDeckStack(4.4 * boardScaleX, z, remaining);
 
     player.hand.forEach((card, i) => {
       const mesh = makeCard(card, showHand);
       mesh.position.copy(stack.top());
-      const x = (i - (player.hand.length - 1) / 2) * 0.95;
+      const x = (i - (player.hand.length - 1) / 2) * 0.95 * boardScaleX;
       mesh.userData.base = T / 2 + i * 0.002;
       mesh.userData.restPosition = new THREE.Vector3(x, mesh.userData.base, 3.3 * sideSign);
       moveTo(mesh, new THREE.Vector3(x, mesh.userData.base, 3.3 * sideSign), 650, 400 + i * 220);
