@@ -10,9 +10,37 @@ button { transition: background-color .16s ease, border-color .16s ease, color .
 body.modal-open { overflow: hidden; }
 
 #menu { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 980px; min-height: 100vh; min-height: 100svh; margin: 0 auto; padding: 2rem 1.25rem; text-align: center; }
-#menu > h1, #menu > #status { width: 100%; text-align: center; }
+#menu > h1 { width: 100%; text-align: center; }
 #status { color: var(--dim); margin: .25rem 0 1.5rem; min-height: 1.5em; }
 #status.err { color: #e0707a; }
+.menu-screen { width: 100%; max-width: 720px; }
+.menu-screen[hidden] { display: none; }
+.menu-actions { display: grid; gap: .65rem; width: min(100%, 390px); margin: 1.4rem auto 0; }
+.menu-action { min-height: 52px; padding: .75rem 1rem; background: #211b16; color: var(--bone); border: 1px solid #51402b; border-radius: 2px; font: 600 1.05rem Spectral, Georgia, serif; cursor: pointer; }
+.menu-action.primary { background: var(--blood); border-color: var(--blood); }
+.menu-action:hover:not(:disabled), .menu-action:focus-visible { border-color: var(--brass); transform: translateY(-1px); }
+.menu-action:disabled { color: var(--dim); background: #191512; border-color: #302820; cursor: not-allowed; }
+.screen-back { display: block; margin: 0 0 .8rem; padding: .35rem .65rem; background: transparent; color: var(--bone); border: 1px solid #51402b; border-radius: 2px; font: inherit; cursor: pointer; }
+.screen-back:hover, .screen-back:focus-visible { background: var(--brass); color: var(--ink); }
+.screen-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .6rem; }
+.screen-header h2 { margin: 0; }
+.screen-status { margin: 0 0 .7rem; color: var(--dim); text-align: left; }
+.deck-catalog-list { display: grid; gap: .5rem; max-height: min(62vh, 640px); overflow: auto; padding: .1rem .25rem .2rem 0; }
+.deck-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: stretch; gap: .4rem; }
+.deck-select { text-align: left; background: var(--panel); color: var(--bone); border: 1px solid #3a3027; border-left: 4px solid #3a3027; min-height: 44px; padding: .6rem .8rem; font: inherit; cursor: pointer; border-radius: 2px; }
+.deck-select small { display: block; color: var(--dim); }
+.deck-select:hover, .deck-select:focus-visible { border-color: var(--brass); background: #30251c; }
+.tutorial-slide { min-height: 300px; margin-top: .8rem; padding: 1.2rem 1.4rem; border-top: 1px solid #51402b; border-bottom: 1px solid #51402b; text-align: left; animation: tutorial-enter .24s ease-out both; }
+.tutorial-slide h3 { margin: 0 0 .65rem; color: var(--brass); font: 1.65rem/1.2 "IM Fell English", Georgia, serif; }
+.tutorial-slide p { margin: 0 0 .7rem; }
+.tutorial-slide ul { margin: 0; padding-left: 1.25rem; color: #c5b9a4; }
+.tutorial-slide li + li { margin-top: .4rem; }
+.tutorial-controls { display: grid; grid-template-columns: 2.75rem 1fr 2.75rem; align-items: center; gap: .8rem; margin-top: .9rem; }
+.tutorial-controls button { width: 2.75rem; aspect-ratio: 1; background: transparent; color: var(--bone); border: 1px solid #51402b; border-radius: 50%; font: 1.2rem/1 Spectral, Georgia, serif; cursor: pointer; }
+.tutorial-controls button:hover:not(:disabled), .tutorial-controls button:focus-visible { background: var(--brass); color: var(--ink); }
+.tutorial-controls button:disabled { opacity: .4; cursor: not-allowed; }
+.tutorial-controls span { color: var(--dim); text-align: center; font-variant-numeric: tabular-nums; }
+@keyframes tutorial-enter { from { opacity: .35; transform: translateX(10px); } to { opacity: 1; transform: translateX(0); } }
 .pickers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; width: 100%; gap: 2rem; }
 .pickers:has(#picker-you[hidden]), .pickers:has(#picker-npc[hidden]) { grid-template-columns: minmax(0, 1fr); }
 .hero-picker { width: 100%; max-width: 470px; min-width: 0; justify-self: center; }
@@ -115,6 +143,9 @@ dialog::backdrop { background: rgba(0,0,0,.7); }
 @media (max-width: 520px) {
   .deck-list-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .45rem; padding: .6rem; }
   #menu { padding: 1.25rem .75rem; }
+  .deck-row { grid-template-columns: minmax(0, 1fr); }
+  .deck-view { justify-self: start; }
+  .tutorial-slide { min-height: 0; padding: 1rem .2rem; }
   .carousel-track { min-height: 275px; gap: .35rem; padding: .35rem 1.45rem; }
   .deck-preview { min-height: 0; }
   .deck-preview-cards { font-size: .8rem; }

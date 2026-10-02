@@ -14,37 +14,79 @@
 <body>
   <main id="menu">
     <h1>Silver Age</h1>
-    <p id="status">Fetching decklists...</p>
-    <div class="pickers">
-      <section class="hero-picker" id="picker-you" aria-label="Choose your hero">
-        <h2>Your hero</h2>
-        <div class="carousel-heading"><strong id="name-you">Loading hero...</strong><small id="chapter-you"></small></div>
-        <div class="carousel" id="carousel-you">
-          <button class="carousel-arrow previous" id="previous-you" type="button" aria-label="Previous hero">&#8592;</button>
-          <div class="carousel-viewport" id="viewport-you"><div class="carousel-track" id="list-you"></div></div>
-          <button class="carousel-arrow next" id="next-you" type="button" aria-label="Next hero">&#8594;</button>
-        </div>
-        <div class="deck-preview" id="preview-you" aria-live="polite"></div>
-      </section>
-      <section class="hero-picker" id="picker-npc" aria-label="Choose the opponent's hero" hidden>
-        <h2>Opponent's hero</h2>
-        <div class="carousel-heading"><strong id="name-npc">Loading hero...</strong><small id="chapter-npc"></small></div>
-        <div class="carousel" id="carousel-npc">
-          <button class="carousel-arrow previous" id="previous-npc" type="button" aria-label="Previous hero">&#8592;</button>
-          <div class="carousel-viewport" id="viewport-npc"><div class="carousel-track" id="list-npc"></div></div>
-          <button class="carousel-arrow next" id="next-npc" type="button" aria-label="Next hero">&#8594;</button>
-        </div>
-        <div class="deck-preview" id="preview-npc" aria-live="polite"></div>
-      </section>
-    </div>
-    <section id="selection-summary" hidden aria-live="polite">
-      <h2>Selected heroes</h2>
-      <p><strong>You:</strong> <span id="selected-you"></span></p>
-      <p><strong>Opponent:</strong> <span id="selected-npc"></span></p>
-      <button id="change-you" type="button">Change your hero</button>
-      <button id="change-npc" type="button">Change opponent</button>
+    <section id="main-menu" class="menu-screen" aria-label="Main menu">
+      <nav class="menu-actions" aria-label="Main menu options">
+        <button id="open-modes" class="menu-action primary" type="button">Player Against NPC</button>
+        <button id="open-tutorial" class="menu-action" type="button">How to Play</button>
+        <button id="open-decklist" class="menu-action" type="button">DeckList</button>
+      </nav>
     </section>
-    <button id="start" disabled>Start game</button>
+
+    <section id="mode-menu" class="menu-screen" aria-label="Choose a game mode" hidden>
+      <button class="screen-back" id="mode-back" type="button">Back</button>
+      <h2>Player Against NPC</h2>
+      <div class="menu-actions">
+        <button id="mode-silver-age" class="menu-action primary" type="button" disabled>Silver Age</button>
+        <button class="menu-action" type="button" disabled>Coming Soon</button>
+      </div>
+    </section>
+
+    <section id="tutorial-screen" class="menu-screen" aria-label="How to Play" hidden>
+      <header class="screen-header">
+        <button class="screen-back" id="tutorial-back" type="button">Back</button>
+        <h2>How to Play</h2>
+      </header>
+      <article id="tutorial-slide" class="tutorial-slide" aria-live="polite"></article>
+      <div class="tutorial-controls">
+        <button id="tutorial-previous" type="button" aria-label="Previous section">&#8592;</button>
+        <span id="tutorial-progress" aria-live="polite"></span>
+        <button id="tutorial-next" type="button" aria-label="Next section">&#8594;</button>
+      </div>
+    </section>
+
+    <section id="decklist-screen" class="menu-screen" aria-label="Deck lists" hidden>
+      <header class="screen-header">
+        <button class="screen-back" id="decklist-back" type="button">Back</button>
+        <h2>DeckList</h2>
+      </header>
+      <p id="deck-catalog-status" class="screen-status" aria-live="polite"></p>
+      <div id="deck-catalog-list" class="deck-catalog-list"></div>
+    </section>
+
+    <section id="hero-selection" class="menu-screen" aria-label="Hero selection" hidden>
+      <button class="screen-back" id="hero-back" type="button">Back to modes</button>
+      <p id="status" role="status" aria-live="polite"></p>
+      <div class="pickers">
+        <section class="hero-picker" id="picker-you" aria-label="Choose your hero">
+          <h2>Your hero</h2>
+          <div class="carousel-heading"><strong id="name-you">Loading hero...</strong><small id="chapter-you"></small></div>
+          <div class="carousel" id="carousel-you">
+            <button class="carousel-arrow previous" id="previous-you" type="button" aria-label="Previous hero">&#8592;</button>
+            <div class="carousel-viewport" id="viewport-you"><div class="carousel-track" id="list-you"></div></div>
+            <button class="carousel-arrow next" id="next-you" type="button" aria-label="Next hero">&#8594;</button>
+          </div>
+          <div class="deck-preview" id="preview-you" aria-live="polite"></div>
+        </section>
+        <section class="hero-picker" id="picker-npc" aria-label="Choose the opponent's hero" hidden>
+          <h2>Opponent's hero</h2>
+          <div class="carousel-heading"><strong id="name-npc">Loading hero...</strong><small id="chapter-npc"></small></div>
+          <div class="carousel" id="carousel-npc">
+            <button class="carousel-arrow previous" id="previous-npc" type="button" aria-label="Previous hero">&#8592;</button>
+            <div class="carousel-viewport" id="viewport-npc"><div class="carousel-track" id="list-npc"></div></div>
+            <button class="carousel-arrow next" id="next-npc" type="button" aria-label="Next hero">&#8594;</button>
+          </div>
+          <div class="deck-preview" id="preview-npc" aria-live="polite"></div>
+        </section>
+      </div>
+      <section id="selection-summary" hidden aria-live="polite">
+        <h2>Selected heroes</h2>
+        <p><strong>You:</strong> <span id="selected-you"></span></p>
+        <p><strong>Opponent:</strong> <span id="selected-npc"></span></p>
+        <button id="change-you" type="button">Change your hero</button>
+        <button id="change-npc" type="button">Change opponent</button>
+      </section>
+      <button id="start" disabled>Start game</button>
+    </section>
   </main>
 
   <dialog id="equip">

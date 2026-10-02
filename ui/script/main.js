@@ -5,6 +5,7 @@ const $ = (s) => document.querySelector(s);
 const state = {
   products: [], deckCache: new Map(), you: null, npc: null, stage: null,
   pickerIndex: { you: 0, npc: 0 }, pickerRender: { you: 0, npc: 0 }, pickerDirection: { you: '', npc: '' },
+  tutorialSlides: [], tutorialIndex: 0, catalogError: '',
 };
 const APP_ROOT = new URL('../', import.meta.url);
 const PRODUCT_GROUPS_URL = 'https://api.cardvault.fabtcg.com/carddb/api/v1/product-groups-products/?page_size=150';
@@ -137,17 +138,89 @@ function setMenuLocked(locked) {
   document.body.classList.toggle('modal-open', locked);
 }
 
+function showMenuScreen(screenId) {
+  for (const id of ['main-menu', 'mode-menu', 'tutorial-screen', 'decklist-screen', 'hero-selection']) {
+    $(`#${id}`).hidden = id !== screenId;
+  }
+}
+
+function renderDeckCatalog() {
+  const list = $('#deck-catalog-list');
+  list.replaceChildren();
+  $('#deck-catalog-status').textContent = state.products.length
+    ? `${state.products.length} hero decks available`
+    : state.catalogError || 'Loading deck lists...';
+
+  for (const product of state.products) {
+    const row = document.createElement('div');
+    row.className = 'deck-row';
+    const hero = document.createElement('button');
+    hero.type = 'button';
+    hero.className = 'deck deck-select';
+    hero.append(document.createTextNode(product.name.replace(/^Silver Age Chapter [1-3] - /, '')));
+    const chapter = document.createElement('small');
+    chapter.textContent = `Chapter ${product.chapter}`;
+    hero.append(chapter);
+    hero.onclick = () => openDeckList(product);
+
+    const view = document.createElement('button');
+    view.type = 'button';
+    view.className = 'deck-view';
+    view.textContent = 'View deck list';
+    view.onclick = () => openDeckList(product);
+    row.append(hero, view);
+    list.append(row);
+  }
+}
+
+function renderTutorialSlide(index) {
+  if (!state.tutorialSlides.length) return;
+  state.tutorialIndex = Math.max(0, Math.min(index, state.tutorialSlides.length - 1));
+  const section = state.tutorialSlides[state.tutorialIndex];
+  const slide = $('#tutorial-slide');
+  const title = document.createElement('h3');
+  title.textContent = section.title;
+  const summary = document.createElement('p');
+  summary.textContent = section.summary;
+  const points = document.createElement('ul');
+  for (const point of section.points) {
+    const item = document.createElement('li');
+    item.textContent = point;
+    points.append(item);
+  }
+  slide.replaceChildren(title, summary, points);
+  $('#tutorial-progress').textContent = `${state.tutorialIndex + 1} / ${state.tutorialSlides.length}`;
+  $('#tutorial-previous').disabled = state.tutorialIndex === 0;
+  $('#tutorial-next').disabled = state.tutorialIndex === state.tutorialSlides.length - 1;
+}
+
+async function loadTutorial() {
+  try {
+    const tutorial = await fetchJson(new URL('data/how-to-play.json', APP_ROOT));
+    state.tutorialSlides = tutorial.sections;
+    renderTutorialSlide(0);
+  } catch (error) {
+    console.error('Could not load the how-to-play guide:', error);
+    const message = document.createElement('p');
+    message.textContent = 'The how-to-play guide could not be loaded.';
+    $('#tutorial-slide').replaceChildren(message);
+  }
+}
+
 async function loadDecks() {
   const status = $('#status');
   status.textContent = 'Loading Silver Age products...';
   try {
     state.products = await fetchProducts();
     status.textContent = `${state.products.length} Silver Age decks available. Choose both heroes.`;
+    state.catalogError = '';
+    $('#mode-silver-age').disabled = false;
   } catch (e) {
+    state.catalogError = e.message;
     status.textContent = `${e.message} Check the browser console.`;
     status.classList.add('err');
   }
-  renderList('you');
+  renderDeckCatalog();
 }
 
 function movePicker(who, index, direction) {
@@ -464,6 +537,32 @@ async function startGame() {
 }
 
 $('#start').onclick = startGame;
+$('#open-modes').onclick = () => showMenuScreen('mode-menu');
+$('#mode-back').onclick = () => showMenuScreen('main-menu');
+$('#mode-silver-age').onclick = () => {
+  state.you = null;
+  state.npc = null;
+  $('#picker-you').hidden = false;
+  $('#picker-npc').hidden = true;
+  $('#selection-summary').hidden = true;
+  $('#start').disabled = true;
+  showMenuScreen('hero-selection');
+  renderList('you');
+};
+$('#hero-back').onclick = () => {
+  state.you = null;
+  state.npc = null;
+  showMenuScreen('mode-menu');
+};
+$('#open-tutorial').onclick = () => showMenuScreen('tutorial-screen');
+$('#tutorial-back').onclick = () => showMenuScreen('main-menu');
+$('#tutorial-previous').onclick = () => renderTutorialSlide(state.tutorialIndex - 1);
+$('#tutorial-next').onclick = () => renderTutorialSlide(state.tutorialIndex + 1);
+$('#open-decklist').onclick = () => {
+  renderDeckCatalog();
+  showMenuScreen('decklist-screen');
+};
+$('#decklist-back').onclick = () => showMenuScreen('main-menu');
 $(`#change-you`).onclick = () => {
   state.you = null;
   state.npc = null;
@@ -483,6 +582,7 @@ $(`#change-npc`).onclick = () => {
 $('#quit').onclick = () => {
   for (const id of ['#stage', '#hud', '#quit']) $(id).hidden = true;
   $('#menu').hidden = false;
+  showMenuScreen('main-menu');
 };
 $('#deck-list-back').onclick = () => $('#deck-list').close();
 $('#card-preview-back').onclick = closeCardPreview;
@@ -499,4 +599,5 @@ $('#card-preview-image').addEventListener('pointermove', (event) => {
   event.currentTarget.style.transform = `perspective(1000px) rotateX(${-y * 5}deg) rotateY(${x * 5}deg) translateY(-3px)`;
 });
 $('#card-preview-image').addEventListener('pointerleave', (event) => { event.currentTarget.style.transform = ''; });
+loadTutorial();
 loadDecks();

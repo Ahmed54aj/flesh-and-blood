@@ -1,0 +1,83 @@
+{
+  "source": "https://dhhim4ltzu1pj.cloudfront.net/media/documents/EN_L2P_v1.4.pdf",
+  "title": "Flesh and Blood: Learn to Play",
+  "sections": [
+    {
+      "title": "The goal",
+      "summary": "Flesh and Blood is a head-to-head game built around the heroes. Win by reducing your opponent's life to zero.",
+      "points": [
+        "Your hero begins in the arena and is the focus of the fight.",
+        "Cards, equipment, and weapons help you attack, defend, and manage resources."
+      ]
+    },
+    {
+      "title": "Game zones",
+      "summary": "Cards move between named zones as the game progresses. The arena is the hero, weapons, equipment, combat chain, and other permanents in play.",
+      "points": [
+        "The deck is face-down; the hand is drawn from it. Pitch holds cards used to generate resources.",
+        "The arsenal stores one face-down card for a future turn. The graveyard holds resolved, discarded, or destroyed cards; banished cards go to the banished zone.",
+        "Attacks and defending cards meet on the combat chain. Weapons and equipment return to their zones after combat."
+      ]
+    },
+    {
+      "title": "Getting ready",
+      "summary": "Set up your hero, equipment, and deck before drawing your opening hand.",
+      "points": [
+        "Place your hero face-up, decide who goes first, and choose your weapons and equipment before seeing the opponent's choices.",
+        "Choose a legal deck for the format, shuffle it, and let the opponent cut it. Reveal your weapons and equipment, then draw cards up to your hero's intellect.",
+        "There is no mulligan: the cards you draw are your starting hand."
+      ]
+    },
+    {
+      "title": "Turn structure",
+      "summary": "Each turn moves through the start phase, action phase, and end phase.",
+      "points": [
+        "Start: resolve effects that happen at the beginning of the turn.",
+        "Action: begin with one action point. Playing an action with go again returns an action point when it resolves.",
+        "End: you may put a card from hand into an empty arsenal, return pitched cards to the bottom of the deck, lose unused points, and draw back up to intellect."
+      ]
+    },
+    {
+      "title": "Playing a card",
+      "summary": "Announce the card and any targets or modes, then pay every cost before it resolves.",
+      "points": [
+        "Pitch cards from your hand to gain resource points equal to their pitch value. You may pitch only as much as needed to cover the resource cost.",
+        "Pay additional costs after the resource cost. If you cannot pay all costs, you cannot play the card.",
+        "Action cards use an action point. Any unspent resources remain available for the rest of your turn."
+      ]
+    },
+    {
+      "title": "Activating abilities",
+      "summary": "To activate an ability, announce it, pay its costs, and resolve its effect, much like playing a card.",
+      "points": [
+        "Abilities are written as limit, type, cost, and effect. A limit such as once per turn restricts how often it can be used.",
+        "Action abilities require an action point; instants can be used at other times, and reactions are used during combat's reaction step.",
+        "An ability whose effect is an attack starts combat."
+      ]
+    },
+    {
+      "title": "Combat",
+      "summary": "An attack resolves as a chain link. Finish its steps before playing another action.",
+      "points": [
+        "Layer: play or activate the attack and choose its target. Attack: it moves onto the combat chain and attacks with its power.",
+        "Defend: the defender may use eligible equipment and cards from hand. Compare total defense with attack power; excess power becomes damage, and damage means the attack hit.",
+        "Reaction: players may play attack or defense reactions. Then resolve damage and hit effects, and continue the chain or end combat."
+      ]
+    },
+    {
+      "title": "Closing combat",
+      "summary": "At the close step, clear the combat chain and return cards to their proper zones.",
+      "points": [
+        "Weapons and equipment return to their respective zones.",
+        "Other cards remaining on the combat chain go to their owners' graveyards."
+      ]
+    },
+    {
+      "title": "The golden rule",
+      "summary": "When a card's instructions contradict a general game rule, follow the card text.",
+      "points": [
+        "A card may grant permission to do something the rules normally prohibit; follow that specific instruction."
+      ]
+    }
+  ]
+}
