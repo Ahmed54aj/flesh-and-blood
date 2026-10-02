@@ -442,6 +442,26 @@ function closeCardPreview() {
 }
 
 // Ask the player which equipment to bring. One piece per armour slot; weapons/other can be multiple.
+function choosePlaymat() {
+  const dialog = $('#playmat-settings');
+  return new Promise((resolve) => {
+    dialog.addEventListener('close', () => {
+      setMenuLocked(false);
+      if (dialog.returnValue !== 'continue') {
+        resolve(null);
+        return;
+      }
+      const file = $('#playmat-image').files?.[0];
+      resolve({
+        showZones: $('#show-playmat-zones').checked,
+        imageUrl: file ? URL.createObjectURL(file) : '',
+      });
+    }, { once: true });
+    setMenuLocked(true);
+    dialog.showModal();
+  });
+}
+
 function chooseEquipment(deck) {
   const dialog = $('#equip');
   const box = $('#equip-groups');
@@ -509,11 +529,14 @@ function chooseEquipment(deck) {
 }
 
 async function startGame() {
+  const matOptions = await choosePlaymat();
+  if (!matOptions) return;
   const youEquip = await chooseEquipment(state.you);
   const npcEquip = npcPickEquipment(state.npc.equipment);
   $('#menu').hidden = true;
   for (const id of ['#stage', '#initiative-status']) $(id).hidden = false;
   state.stage ||= createStage($('#stage'), new URL('../card-back.jpg', import.meta.url).href);
+  state.stage.setPlaymatOptions(matOptions);
   state.stage.resize();
   state.stage.reset();
 

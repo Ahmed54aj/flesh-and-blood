@@ -89,6 +89,24 @@
     </section>
   </main>
 
+  <dialog id="playmat-settings">
+    <form method="dialog" id="playmat-form">
+      <h2>Playmat setup</h2>
+      <label class="playmat-toggle" for="show-playmat-zones">
+        <input id="show-playmat-zones" type="checkbox" checked>
+        <span>Show zones and labels</span>
+      </label>
+      <label class="playmat-upload" for="playmat-image">
+        <span>Playmat image</span>
+        <input id="playmat-image" type="file" accept="image/*">
+      </label>
+      <div class="playmat-actions">
+        <button type="submit" value="cancel">Cancel</button>
+        <button type="submit" value="continue">Continue</button>
+      </div>
+    </form>
+  </dialog>
+
   <dialog id="equip">
     <form method="dialog" id="equip-form">
       <h2>Choose your equipment</h2>

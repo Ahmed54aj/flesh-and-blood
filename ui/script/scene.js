@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 
 const W = 0.7, H = 0.98, T = 0.012;
+const MAT_TOP = 0.1;
 const PITCH = { 0: '#6b6358', 1: '#a3202a', 2: '#c9a227', 3: '#2f5d8a' };
 const PREVIEW_POSITION = new THREE.Vector3(0, 2.2, 0.3);
 const PREVIEW_SCALE = new THREE.Vector3(4, 4, 4);
@@ -32,7 +33,8 @@ function d20NumberTexture(number) {
 }
 
 function createD20() {
-  const geometry = new THREE.IcosahedronGeometry(D20_RADIUS, 0).toNonIndexed();
+  const sourceGeometry = new THREE.IcosahedronGeometry(D20_RADIUS, 0);
+  const geometry = sourceGeometry.index ? sourceGeometry.toNonIndexed() : sourceGeometry;
   const mesh = new THREE.Group();
   const body = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({
     color: '#d8bd82',
@@ -113,6 +115,79 @@ function faceTex({ name, pitch = 0, label }) {
   return faceCache.get(key);
 }
 
+function zoneTex(label, width = 256, height = 358) {
+  const canvas = document.createElement('canvas');
+  canvas.width = width;
+  canvas.height = height;
+  const context = canvas.getContext('2d');
+  context.fillStyle = 'rgba(25, 17, 12, 0.72)';
+  context.fillRect(0, 0, width, height);
+  context.strokeStyle = '#b8913f';
+  context.lineWidth = 5;
+  context.strokeRect(9, 9, width - 18, height - 18);
+  context.fillStyle = '#eadfc8';
+  context.font = `${width > 300 ? 38 : 24}px "IM Fell English", Georgia, serif`;
+  context.textAlign = 'center';
+  context.textBaseline = 'middle';
+  context.fillText(label.toUpperCase(), width / 2, height / 2, width - 24);
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  return texture;
+}
+
+function defaultPlaymatTexture() {
+  const canvas = document.createElement('canvas');
+  canvas.width = 512;
+  canvas.height = 256;
+  const context = canvas.getContext('2d');
+  context.fillStyle = '#171817';
+  context.fillRect(0, 0, canvas.width, canvas.height);
+  for (let i = 0; i < 9000; i++) {
+    const shade = 25 + Math.floor(Math.random() * 20);
+    context.fillStyle = `rgba(${shade}, ${shade}, ${shade}, 0.22)`;
+    context.fillRect(Math.random() * canvas.width, Math.random() * canvas.height, 1, 1);
+  }
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  return texture;
+}
+
+function roundedMatShape(width, height) {
+  const radius = 0.16;
+  const shape = new THREE.Shape();
+  shape.moveTo(-width / 2 + radius, -height / 2);
+  shape.lineTo(width / 2 - radius, -height / 2);
+  shape.quadraticCurveTo(width / 2, -height / 2, width / 2, -height / 2 + radius);
+  shape.lineTo(width / 2, height / 2 - radius);
+  shape.quadraticCurveTo(width / 2, height / 2, width / 2 - radius, height / 2);
+  shape.lineTo(-width / 2 + radius, height / 2);
+  shape.quadraticCurveTo(-width / 2, height / 2, -width / 2, height / 2 - radius);
+  shape.lineTo(-width / 2, -height / 2 + radius);
+  shape.quadraticCurveTo(-width / 2, -height / 2, -width / 2 + radius, -height / 2);
+  return shape;
+}
+
+function roundedMatGeometry(width, height) {
+  const geometry = new THREE.ExtrudeGeometry(roundedMatShape(width, height), {
+    depth: 0.065, bevelEnabled: true, bevelSegments: 3, steps: 1,
+    bevelSize: 0.035, bevelThickness: 0.035,
+  });
+  geometry.computeVertexNormals();
+  return geometry;
+}
+
+function roundedMatSurfaceGeometry(width, height) {
+  const geometry = new THREE.ShapeGeometry(roundedMatShape(width - 0.06, height - 0.06), 8);
+  const positions = geometry.attributes.position;
+  const uvs = geometry.attributes.uv;
+  for (let i = 0; i < positions.count; i++) {
+    uvs.setXY(i, positions.getX(i) / width + 0.5, positions.getY(i) / height + 0.5);
+  }
+  uvs.needsUpdate = true;
+  geometry.computeVertexNormals();
+  return geometry;
+}
+
 const side = new THREE.MeshStandardMaterial({ color: '#1a1512' });
 const std = (map) => new THREE.MeshStandardMaterial({ map });
 
@@ -152,6 +227,14 @@ export function createStage(host, cardBackUrl) {
 
   const group = new THREE.Group();
   scene.add(group);
+  const layout = new THREE.Group();
+  scene.add(layout);
+  const matSurfaceTexture = defaultPlaymatTexture();
+  const matSurfaceMaterial = new THREE.MeshStandardMaterial({ map: matSurfaceTexture, roughness: 0.88, metalness: 0.08 });
+  const matEdgeMaterial = new THREE.MeshStandardMaterial({ color: '#090a09', roughness: 0.55, metalness: 0.12 });
+  const matMeshes = [];
+  let uploadedMatTexture = null;
+  let playmatImageRequest = 0;
   const tweens = [];
   const clickableCards = [];
   const yourHand = [];
@@ -170,6 +253,8 @@ export function createStage(host, cardBackUrl) {
         mesh.position.x *= ratio;
         if (mesh.userData.restPosition) mesh.userData.restPosition.x *= ratio;
       }
+      for (const mesh of layout.children) mesh.position.x *= ratio;
+      for (const mat of matMeshes) mat.scale.x *= ratio;
       for (const tween of tweens) {
         tween.from.x *= ratio;
         tween.to.x *= ratio;
@@ -208,9 +293,89 @@ export function createStage(host, cardBackUrl) {
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(W, 1, H), [side, side, std(cardBack), side, side, side]);
     mesh.position.set(x, 0, z);
     group.add(mesh);
-    const set = (n) => { mesh.visible = n > 0; mesh.scale.y = Math.max(n * T, 0.001); mesh.position.y = mesh.scale.y / 2; };
+    const set = (n) => { mesh.visible = n > 0; mesh.scale.y = Math.max(n * T, 0.001); mesh.position.y = MAT_TOP + mesh.scale.y / 2; };
     set(count);
-    return { set, top: () => new THREE.Vector3(x, mesh.scale.y + T, z) };
+    return { set, top: () => new THREE.Vector3(x, MAT_TOP + mesh.scale.y + T, z) };
+  }
+
+  const zones = {
+    head: [-3.5, 1.32], graveyard: [3.5, 1.32],
+    chest: [-3.5, 2.55], arms: [-2.5, 2.55], weaponLeft: [-1, 2.55],
+    hero: [0, 2.55], weaponRight: [1, 2.55],
+    pitch: [2.5, 2.55], deck: [3.5, 2.55],
+    legs: [-3.5, 3.78], arsenal: [0, 3.78], banished: [3.5, 3.78],
+  };
+
+  for (const sideSign of [-1, 1]) {
+    const mat = new THREE.Mesh(roundedMatGeometry(8.3, 4.9), matEdgeMaterial);
+    mat.position.set(0, 0, sideSign * 2.55);
+    mat.rotation.x = -Math.PI / 2;
+    layout.add(mat);
+    matMeshes.push(mat);
+
+    const surface = new THREE.Mesh(roundedMatSurfaceGeometry(8.3, 4.9), matSurfaceMaterial);
+    surface.position.set(0, MAT_TOP + 0.001, sideSign * 2.55);
+    surface.rotation.set(-Math.PI / 2, sideSign < 0 ? Math.PI : 0, 0);
+    layout.add(surface);
+  }
+
+  function makeZone(label, x, z, sideSign, width = 0.94, height = 1.18) {
+    const material = new THREE.MeshBasicMaterial({
+      map: zoneTex(label), transparent: true, depthWrite: false, side: THREE.DoubleSide,
+    });
+    const marker = new THREE.Mesh(new THREE.PlaneGeometry(width, height), material);
+    marker.position.set(x * sideSign * boardScaleX, MAT_TOP + 0.002, z * sideSign);
+    marker.rotation.set(-Math.PI / 2, sideSign < 0 ? Math.PI : 0, 0);
+    marker.userData.zoneMarker = true;
+    layout.add(marker);
+  }
+
+  function createBoardLayout() {
+    const chain = new THREE.Mesh(
+      new THREE.PlaneGeometry(10.5, 0.62),
+      new THREE.MeshBasicMaterial({ map: zoneTex('Combat Chain', 1024, 128), transparent: true, depthWrite: false, side: THREE.DoubleSide }),
+    );
+    chain.position.y = MAT_TOP + 0.002;
+    chain.rotation.x = -Math.PI / 2;
+    chain.userData.zoneMarker = true;
+    layout.add(chain);
+    for (const sideSign of [-1, 1]) {
+      for (const [key, [x, z]] of Object.entries(zones)) {
+        const label = key.startsWith('weapon') ? 'Weapon' : key;
+        makeZone(label, x, z, sideSign);
+      }
+    }
+  }
+  createBoardLayout();
+
+  function setPlaymatOptions({ showZones = true, imageUrl = '' } = {}) {
+    const imageRequest = ++playmatImageRequest;
+    for (const marker of layout.children) {
+      if (marker.userData.zoneMarker) marker.visible = showZones;
+    }
+    if (uploadedMatTexture) {
+      uploadedMatTexture.dispose();
+      uploadedMatTexture = null;
+    }
+    matSurfaceMaterial.map = matSurfaceTexture;
+    matSurfaceMaterial.needsUpdate = true;
+    if (imageUrl) {
+      uploadedMatTexture = textureLoader.load(imageUrl, (texture) => {
+        if (imageRequest !== playmatImageRequest) {
+          texture.dispose();
+          URL.revokeObjectURL(imageUrl);
+          return;
+        }
+        texture.colorSpace = THREE.SRGBColorSpace;
+        texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+        matSurfaceMaterial.map = texture;
+        matSurfaceMaterial.needsUpdate = true;
+        URL.revokeObjectURL(imageUrl);
+      }, undefined, () => {
+        URL.revokeObjectURL(imageUrl);
+        console.warn('Could not load the selected playmat image.');
+      });
+    }
   }
 
   function rollInitiative(onStatus = () => {}) {
@@ -364,29 +529,48 @@ export function createStage(host, cardBackUrl) {
 
   // side: +1 = you (bottom of screen), -1 = opponent (top)
   function deal(sideSign, player, { showHand }) {
-    const z = 1.7 * sideSign;
+    const rotation = sideSign < 0 ? Math.PI : 0;
+    const positionFor = (key) => {
+      const [x, z] = zones[key];
+      return new THREE.Vector3(x * sideSign * boardScaleX, MAT_TOP + T / 2, z * sideSign);
+    };
+    const addCard = (card, position) => {
+      const mesh = makeCard(card, true);
+      mesh.position.copy(position);
+      mesh.rotation.y = rotation;
+      mesh.userData.restPosition = mesh.position.clone();
+      clickableCards.push(mesh);
+      return mesh;
+    };
+
     const h = makeCard({ name: player.hero.name, image: player.hero.image, label: 'Hero' }, true);
-    h.position.set(-4.4 * boardScaleX, T / 2, z);
+    h.position.copy(positionFor('hero'));
+    h.rotation.y = rotation;
     h.userData.restPosition = h.position.clone();
     clickableCards.push(h);
 
-    player.equipment.forEach((e, i) => {
-      const c = makeCard({ name: e.name, image: e.image, label: e.slot }, true);
-      c.position.set((-3.3 + i * 0.85) * boardScaleX, T / 2, z);
-      c.userData.restPosition = c.position.clone();
-      clickableCards.push(c);
-    });
+    const weaponPositions = [positionFor('weaponLeft'), positionFor('weaponRight')];
+    let weaponIndex = 0;
+    for (const equipment of player.equipment) {
+      const isWeaponSlot = equipment.slot === 'weapon' || equipment.slot === 'other';
+      const position = isWeaponSlot
+        ? weaponPositions[Math.min(weaponIndex++, weaponPositions.length - 1)]
+        : positionFor(equipment.slot);
+      addCard({ name: equipment.name, image: equipment.image, label: equipment.slot }, position);
+    }
 
     let remaining = player.library.length + player.hand.length;
-    const stack = makeDeckStack(4.4 * boardScaleX, z, remaining);
+    const [deckX, deckZ] = zones.deck;
+    const stack = makeDeckStack(deckX * sideSign * boardScaleX, deckZ * sideSign, remaining);
 
     player.hand.forEach((card, i) => {
       const mesh = makeCard(card, showHand);
+      mesh.rotation.y = rotation;
       mesh.position.copy(stack.top());
-      const x = (i - (player.hand.length - 1) / 2) * 0.95 * boardScaleX;
-      mesh.userData.base = T / 2 + i * 0.002;
-      mesh.userData.restPosition = new THREE.Vector3(x, mesh.userData.base, 3.3 * sideSign);
-      moveTo(mesh, new THREE.Vector3(x, mesh.userData.base, 3.3 * sideSign), 650, 400 + i * 220);
+      const x = (i - (player.hand.length - 1) / 2) * 0.95 * sideSign * boardScaleX;
+      mesh.userData.base = MAT_TOP + T / 2 + i * 0.002;
+      mesh.userData.restPosition = new THREE.Vector3(x, mesh.userData.base, 4.55 * sideSign);
+      moveTo(mesh, new THREE.Vector3(x, mesh.userData.base, 4.55 * sideSign), 650, 400 + i * 220);
       setTimeout(() => stack.set(--remaining), 400 + i * 220);
       if (showHand) {
         yourHand.push(mesh);
@@ -515,5 +699,5 @@ export function createStage(host, cardBackUrl) {
     renderer.render(scene, camera);
   });
 
-  return { deal, reset, resize, rollInitiative, clearInitiativeDice };
+  return { deal, reset, resize, rollInitiative, clearInitiativeDice, setPlaymatOptions };
 }
